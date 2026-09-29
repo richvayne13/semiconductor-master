@@ -4,7 +4,8 @@
     "url": "https://sshmyb.tistory.com/393",
     "title": "[딴딴's 직무면접] HBM(High Bandwidth Memory) 기술 동향",
     "main_category": "최신 기술 및 기업",
-    "sub_category": "[HBM] HBM & 차세대 메모리",
+    "sub_category": "HBM",
+    "sub_category_name": "HBM & 차세대 메모리",
     "is_protected": false,
     "images": [
       {
@@ -64,7 +65,8 @@
     "url": "https://sshmyb.tistory.com/351",
     "title": "TSMC 2nm N2 공정, 그들만의 경쟁력은 무엇일까요?. 면접 전에 꼭 한 번 읽고 가야 할 내용",
     "main_category": "최신 기술 및 기업",
-    "sub_category": "[FND] 파운드리 & 선단공정",
+    "sub_category": "FND",
+    "sub_category_name": "파운드리 & 선단공정",
     "is_protected": false,
     "images": [
       {
@@ -126,7 +128,8 @@
     "url": "https://sshmyb.tistory.com/350",
     "title": "TSMC, 2nm node 2025년 양산, 한 번은 반드시 숙지하고 가야 할 내용",
     "main_category": "최신 기술 및 기업",
-    "sub_category": "[FND] 파운드리 & 선단공정",
+    "sub_category": "FND",
+    "sub_category_name": "파운드리 & 선단공정",
     "is_protected": false,
     "images": [
       {
@@ -181,7 +184,8 @@
     "url": "https://sshmyb.tistory.com/344",
     "title": "[딴사관 정주행 프로젝트] CMP 공정 + 세정공정, C&C",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[C] CMP & 세정 공정",
+    "sub_category": "C",
+    "sub_category_name": "CMP & 세정 공정 (Cleaning & CMP)",
     "is_protected": false,
     "images": [
       {
@@ -210,7 +214,8 @@
     "url": "https://sshmyb.tistory.com/343",
     "title": "[딴사관 정주행 프로젝트] 반도체 공정 -\"에치공정, 기초+심화 편\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -251,7 +256,8 @@
     "url": "https://sshmyb.tistory.com/342",
     "title": "[딴딴's 비밀노트] 차세대 메모리 3D DRAM 소자에 대해서 설명하세요.",
     "main_category": "반도체 소자",
-    "sub_category": "[DRAM] DRAM 메모리",
+    "sub_category": "DRAM",
+    "sub_category_name": "DRAM 메모리",
     "is_protected": false,
     "images": [
       {
@@ -358,7 +364,8 @@
     "url": "https://sshmyb.tistory.com/341",
     "title": "[딴딴's 직무면접] SiC, GaN 화합물 전력반도체 산업의 전망 및 Challenge",
     "main_category": "반도체 소자",
-    "sub_category": "[PWR] 전력반도체 & 특수소자",
+    "sub_category": "PWR",
+    "sub_category_name": "전력반도체 & 특수소자",
     "is_protected": false,
     "images": [
       {
@@ -385,7 +392,8 @@
     "url": "https://sshmyb.tistory.com/330",
     "title": "[반도체 공정] C&C (Cleaning & CMP) 공정의 모든 것, 한눈에 이해하는 CMP 공정",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[C] CMP & 세정 공정",
+    "sub_category": "C",
+    "sub_category_name": "CMP & 세정 공정 (Cleaning & CMP)",
     "is_protected": false,
     "images": [
       {
@@ -482,7 +490,8 @@
     "url": "https://sshmyb.tistory.com/327",
     "title": "[딴사관 정주행 프로젝트] 플라즈마 (Plasma) 기초부터 심화까지.",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -511,7 +520,8 @@
     "url": "https://sshmyb.tistory.com/324",
     "title": "[딴사관 정주행 프로젝트] 반도체 공정 - \"증착공정, 기초+심화 편\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -568,7 +578,8 @@
     "url": "https://sshmyb.tistory.com/319",
     "title": "[딴사관 정주행 프로젝트] 반도체 공정 - \"포토공정, 기초+심화 편\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -629,7 +640,8 @@
     "url": "https://sshmyb.tistory.com/318",
     "title": "[딴사관 정주행 프로젝트] 반도체 공정 - \"포토공정, 기초 편\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -682,7 +694,8 @@
     "url": "https://sshmyb.tistory.com/314",
     "title": "[속성 직무면접 편] 메탈 공정 : 기출 및 예상 질문 편 - #05 \"Salicide 공정\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[M] 금속배선 & 패키징",
+    "sub_category": "M",
+    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
     "is_protected": false,
     "images": [
       {
@@ -723,7 +736,8 @@
     "url": "https://sshmyb.tistory.com/313",
     "title": "[속성 직무면접 편] 메탈 공정 : 기출 및 예상 질문 정리 편 - #04 Electro Migration (EM), Stress Migration (SM) 저항성",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[M] 금속배선 & 패키징",
+    "sub_category": "M",
+    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
     "is_protected": false,
     "images": [
       {
@@ -764,7 +778,8 @@
     "url": "https://sshmyb.tistory.com/312",
     "title": "[속성 직무면접 편] 메탈 공정 : 기출 및 예상 질문 정리 편 - #03",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[M] 금속배선 & 패키징",
+    "sub_category": "M",
+    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
     "is_protected": false,
     "images": [
       {
@@ -798,7 +813,8 @@
     "url": "https://sshmyb.tistory.com/310",
     "title": "[속성 직무면접 편] 메탈 공정 : 기출 및 예상 질문 정리 편 -#02",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[M] 금속배선 & 패키징",
+    "sub_category": "M",
+    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
     "is_protected": false,
     "images": [
       {
@@ -862,7 +878,8 @@
     "url": "https://sshmyb.tistory.com/309",
     "title": "[속성 직무면접 편] 메탈 공정 : 기출 및 예상 질문 정리 편 - #01",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[M] 금속배선 & 패키징",
+    "sub_category": "M",
+    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
     "is_protected": false,
     "images": [
       {
@@ -951,7 +968,8 @@
     "url": "https://sshmyb.tistory.com/308",
     "title": "[속성 직무면접 편]  Diffusion 공정 : 기출 및 예상 질문 정리 편",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[T] 확산 & 열처리 공정",
+    "sub_category": "T",
+    "sub_category_name": "확산 & 열처리 공정 (Thermal)",
     "is_protected": false,
     "images": [
       {
@@ -1025,7 +1043,8 @@
     "url": "https://sshmyb.tistory.com/303",
     "title": "[딴딴's 속성과외] 증착 공정 -1편- / 불랑사례 / 실무에서 충분히 일어날 수 있는 불량 유형.",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -1129,7 +1148,8 @@
     "url": "https://sshmyb.tistory.com/289",
     "title": "[딴딴's 속성과외] #3편, \"플라즈마, 3편으로 끝낸다\" #Plasma Summary!!, #Sheath #Self Bias Effect #면적에 따른 자기바이어스효과",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -1234,7 +1254,8 @@
     "url": "https://sshmyb.tistory.com/288",
     "title": "[딴딴's 속성과외] #2편, \"플라즈마, 3편으로 끝낸다. #Plasma Summary!!, #Plasma 종류, #ICP, #CCP, #DC",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -1288,7 +1309,8 @@
     "url": "https://sshmyb.tistory.com/285",
     "title": "[딴딴's 속성과외] #1편, \"플라즈마, 3편으로 끝낸다.\" #Plasma Summary!! #Plasma #발생원리 #파센법칙",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -1331,7 +1353,8 @@
     "url": "https://sshmyb.tistory.com/283",
     "title": "[딴딴's 속성과외] 포토공정 #09 : 공정 프로세스 및 불량 유형, Engineer's 실무",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -1420,7 +1443,8 @@
     "url": "https://sshmyb.tistory.com/282",
     "title": "[딴딴's 속성과외] 포토공정 #08 : Advanced Lithography & Patterning 경쟁 \"#NIL, #DSA, #High-N",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -1485,7 +1509,8 @@
     "url": "https://sshmyb.tistory.com/280",
     "title": "[딴딴's 속성과외] 포토공정 #07 : 고해상도 / Low-k1 Technology (#OAI, #OPC, #PSM, #Double Patterning, #SADP, #SAQP)",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -1559,7 +1584,8 @@
     "url": "https://sshmyb.tistory.com/279",
     "title": "[딴딴's 속성과외] 포토공정 #06 : 포토공정에서 이미징이 되는 원리??",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -1626,7 +1652,8 @@
     "url": "https://sshmyb.tistory.com/278",
     "title": "[딴딴's 속성과외] 포토공정 #05 : EUV 노광기술 총정리, #3편 -심화- \"ArF-i / EUV 노광기술 / Photoresist\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -1695,7 +1722,8 @@
     "url": "https://sshmyb.tistory.com/277",
     "title": "[딴딴's 속성과외] 포토공정 #04 : 포토레지스트, Photoresist #2편 -심화- \"Resist의 구성요소\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -1731,7 +1759,8 @@
     "url": "https://sshmyb.tistory.com/275",
     "title": "[딴딴's 속성과외] 포토공정 #03 : 포토레지스트, Photoresist #1편 -기초-",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -1760,7 +1789,8 @@
     "url": "https://sshmyb.tistory.com/274",
     "title": "반도체 산업에서의 2차원 소재 적용, 가능할까요!?",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -1850,7 +1880,8 @@
     "url": "https://sshmyb.tistory.com/272",
     "title": "[포토공정] ArF-immersion, \"Resolution & DoF Trade-off 관계인데 왜 향상되는가?\" - 정량적 풀이",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -1926,7 +1957,8 @@
     "url": "https://sshmyb.tistory.com/257",
     "title": "[딴딴'S 속성과외] 포토공정 #02 : \"기초부터 차세대 EUV 공정까지\" -배경지식 편-",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -1983,7 +2015,8 @@
     "url": "https://sshmyb.tistory.com/256",
     "title": "[딴딴's 속성과외] 포토공정 #01 : \"기초부터 차세대 EUV 공정까지\" -기초편-",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -2033,7 +2066,8 @@
     "url": "https://sshmyb.tistory.com/255",
     "title": "[딴딴's 속성과외] 반도체 제조공정에 필수 공정 \"세정\" 공정",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[C] CMP & 세정 공정",
+    "sub_category": "C",
+    "sub_category_name": "CMP & 세정 공정 (Cleaning & CMP)",
     "is_protected": false,
     "images": [
       {
@@ -2092,7 +2126,8 @@
     "url": "https://sshmyb.tistory.com/252",
     "title": "[반도체 소자] 3nm 경쟁력, Samsung vs. TSMC",
     "main_category": "최신 기술 및 기업",
-    "sub_category": "[FND] 파운드리 & 선단공정",
+    "sub_category": "FND",
+    "sub_category_name": "파운드리 & 선단공정",
     "is_protected": false,
     "images": [
       {
@@ -2140,7 +2175,8 @@
     "url": "https://sshmyb.tistory.com/239",
     "title": "[반도체 전공정] CMOS Process Flow, 현직자도 꼭 한 번 숙지해야 하는 공정 플로우에 대해서 알아보자.",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": false,
     "images": [
       {
@@ -2370,7 +2406,8 @@
     "url": "https://sshmyb.tistory.com/238",
     "title": "[금속공정] 훈련 4 : Ohmic Contact을 만들어라!, Salicide 살리사이드 공정.",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[M] 금속배선 & 패키징",
+    "sub_category": "M",
+    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
     "is_protected": false,
     "images": [
       {
@@ -2424,7 +2461,8 @@
     "url": "https://sshmyb.tistory.com/237",
     "title": "[금속 공정] 훈련 3 : Schottky Contact & Ohmic Contact, 정말 중요!",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[M] 금속배선 & 패키징",
+    "sub_category": "M",
+    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
     "is_protected": false,
     "images": [
       {
@@ -2540,7 +2578,8 @@
     "url": "https://sshmyb.tistory.com/236",
     "title": "[금속 공정] 훈련 2 : Schottky & Ohmic Contact, 쇼트키 & 오믹 접합/ 접합 시 에너지 밴드 다이어그램을 그리는 방법 -이종접합 편-",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[M] 금속배선 & 패키징",
+    "sub_category": "M",
+    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
     "is_protected": false,
     "images": [
       {
@@ -2658,7 +2697,8 @@
     "url": "https://sshmyb.tistory.com/235",
     "title": "[금속 공정] 훈련 1 : Schottky & Ohmic Contact, 쇼트키 & 오믹 접합/ 접합 시 에너지 밴드 다이어그램을 그리는 방법 -동종접합 편-",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[M] 금속배선 & 패키징",
+    "sub_category": "M",
+    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
     "is_protected": false,
     "images": [
       {
@@ -2725,7 +2765,8 @@
     "url": "https://sshmyb.tistory.com/234",
     "title": "[디스플레이] OLED의 박막 Passivation 공정 = Encapsulation 공정 = 봉지 공정 : Trade Off 관계만 공부해보자.",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -2775,7 +2816,8 @@
     "url": "https://sshmyb.tistory.com/233",
     "title": "[반도체 소자] Dynamic/Static Power Current, VCC & VDD 차이",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -2812,7 +2854,8 @@
     "url": "https://sshmyb.tistory.com/231",
     "title": "[세정 공정] 훈련 3 : Wet Cleaning , 습식세정에 대해서 설명하세요.",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[C] CMP & 세정 공정",
+    "sub_category": "C",
+    "sub_category_name": "CMP & 세정 공정 (Cleaning & CMP)",
     "is_protected": false,
     "images": [
       {
@@ -2859,7 +2902,8 @@
     "url": "https://sshmyb.tistory.com/229",
     "title": "[세정 공정] 훈련 2 : Cleaning 공정의 개요 - \"세정공정의 중요성\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[C] CMP & 세정 공정",
+    "sub_category": "C",
+    "sub_category_name": "CMP & 세정 공정 (Cleaning & CMP)",
     "is_protected": false,
     "images": [
       {
@@ -2895,7 +2939,8 @@
     "url": "https://sshmyb.tistory.com/228",
     "title": "[세정 공정] 훈련 1 : 세정 공정 - Cleaning 관련 용어",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[C] CMP & 세정 공정",
+    "sub_category": "C",
+    "sub_category_name": "CMP & 세정 공정 (Cleaning & CMP)",
     "is_protected": false,
     "images": [
       {
@@ -2943,7 +2988,8 @@
     "url": "https://sshmyb.tistory.com/225",
     "title": "[평탄화 공정] Chemical Mechanical Polishing, CMP 공정",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[C] CMP & 세정 공정",
+    "sub_category": "C",
+    "sub_category_name": "CMP & 세정 공정 (Cleaning & CMP)",
     "is_protected": false,
     "images": [
       {
@@ -3023,7 +3069,8 @@
     "url": "https://sshmyb.tistory.com/222",
     "title": "[전력반도체] Power Device, 파워반도체, 화합물 반도체, Isolation 기술",
     "main_category": "반도체 소자",
-    "sub_category": "[PWR] 전력반도체 & 특수소자",
+    "sub_category": "PWR",
+    "sub_category_name": "전력반도체 & 특수소자",
     "is_protected": false,
     "images": [
       {
@@ -3094,7 +3141,8 @@
     "url": "https://sshmyb.tistory.com/214",
     "title": "[이온주입 공정] 훈련 9 : 'Shallow Junction Depth Profile' 접합 깊이",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[I] 이온주입 공정",
+    "sub_category": "I",
+    "sub_category_name": "이온주입 공정 (Ion Implantation)",
     "is_protected": false,
     "images": [
       {
@@ -3145,7 +3193,8 @@
     "url": "https://sshmyb.tistory.com/213",
     "title": "[이온주입 공정] 훈련 8 : 이온주입 평가 방법, SIMS, 4-Probe",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[I] 이온주입 공정",
+    "sub_category": "I",
+    "sub_category_name": "이온주입 공정 (Ion Implantation)",
     "is_protected": false,
     "images": [
       {
@@ -3199,7 +3248,8 @@
     "url": "https://sshmyb.tistory.com/212",
     "title": "[이온주입 공정] 훈련 7 : 격자손상 & 결함 & Annealing [2/2], TED, OED, ORD, 공정 이슈.",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[I] 이온주입 공정",
+    "sub_category": "I",
+    "sub_category_name": "이온주입 공정 (Ion Implantation)",
     "is_protected": false,
     "images": [
       {
@@ -3246,7 +3296,8 @@
     "url": "https://sshmyb.tistory.com/211",
     "title": "[이온주입 공정] 훈련 6 : 격자 손상 & 결함 & Annealing [1/2]",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[I] 이온주입 공정",
+    "sub_category": "I",
+    "sub_category_name": "이온주입 공정 (Ion Implantation)",
     "is_protected": false,
     "images": [
       {
@@ -3296,7 +3347,8 @@
     "url": "https://sshmyb.tistory.com/210",
     "title": "[이온주입 공정] 훈련 5 : 이온 분포, Doping Profile, 이온 정지 이론 (Nuclear Stopping & Electronic Stopping Mechanism)",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[I] 이온주입 공정",
+    "sub_category": "I",
+    "sub_category_name": "이온주입 공정 (Ion Implantation)",
     "is_protected": false,
     "images": [
       {
@@ -3358,7 +3410,8 @@
     "url": "https://sshmyb.tistory.com/209",
     "title": "[이온주입 공정] 훈련 4 : 이온주입 공정의 변수, Ion Channeling, Shadowing Effect",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[I] 이온주입 공정",
+    "sub_category": "I",
+    "sub_category_name": "이온주입 공정 (Ion Implantation)",
     "is_protected": false,
     "images": [
       {
@@ -3406,7 +3459,8 @@
     "url": "https://sshmyb.tistory.com/208",
     "title": "[이온주입 공정] 훈련 3 : 이온주입 공정 설비에 대해서 설명해보세요",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[I] 이온주입 공정",
+    "sub_category": "I",
+    "sub_category_name": "이온주입 공정 (Ion Implantation)",
     "is_protected": false,
     "images": [
       {
@@ -3449,7 +3503,8 @@
     "url": "https://sshmyb.tistory.com/207",
     "title": "[이온주입 공정] 훈련 2 : Diffusion 과 Implant 공정의 차이에 대해서 설명하세요.",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[I] 이온주입 공정",
+    "sub_category": "I",
+    "sub_category_name": "이온주입 공정 (Ion Implantation)",
     "is_protected": false,
     "images": [
       {
@@ -3499,7 +3554,8 @@
     "url": "https://sshmyb.tistory.com/206",
     "title": "[이온주입 공정] 훈련 1 : Ion Implant 공정에 대해서 설명하세요.",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[I] 이온주입 공정",
+    "sub_category": "I",
+    "sub_category_name": "이온주입 공정 (Ion Implantation)",
     "is_protected": false,
     "images": [
       {
@@ -3556,7 +3612,8 @@
     "url": "https://sshmyb.tistory.com/205",
     "title": "[식각공정] 훈련 11 : MEMS : Bosch Process를 파헤쳐보자",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -3613,7 +3670,8 @@
     "url": "https://sshmyb.tistory.com/204",
     "title": "[식각공정] 훈련 10 : Atomic Layer Etching (ALE) 차세대 식각공정 기술 [2/2]",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -3652,7 +3710,8 @@
     "url": "https://sshmyb.tistory.com/202",
     "title": "[식각공정] 훈련 9 : Pulsed Etch, Cryogenic Etch - 차세대 에치공정 기술 [1/2]",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -3695,7 +3754,8 @@
     "url": "https://sshmyb.tistory.com/203",
     "title": "[식각공정] 훈련 8 : 이온 질량에 따른 RF Frequency가 미치는 영향",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -3720,7 +3780,8 @@
     "url": "https://sshmyb.tistory.com/201",
     "title": "[식각공정] 훈련 7 :  SiO2, Si3N4 Etch Rate & 결정면에 따른 Etch Rate",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -3753,7 +3814,8 @@
     "url": "https://sshmyb.tistory.com/200",
     "title": "[식각공정] 훈련 6 : Depth Loading Effect / Blocking Mask 이슈",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -3789,7 +3851,8 @@
     "url": "https://sshmyb.tistory.com/199",
     "title": "[식각공정] 훈련 5 : Conductor & Dielectric Etch 방법 + ICP vs. CCP Type Plasma",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -3826,7 +3889,8 @@
     "url": "https://sshmyb.tistory.com/183",
     "title": "[식각공정] 훈련 4 : \"Reactive Ion Etching, RIE 공정에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -3869,7 +3933,8 @@
     "url": "https://sshmyb.tistory.com/182",
     "title": "[식각공정] 훈련 3 : \"Dry Etching, 건식 식각 공정에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -3941,7 +4006,8 @@
     "url": "https://sshmyb.tistory.com/198",
     "title": "[평가 및 분석] Shmoo Plot에 대해서 설명하세요. feat WiKi",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": false,
     "images": [
       {
@@ -4066,7 +4132,8 @@
     "url": "https://sshmyb.tistory.com/197",
     "title": "[평가 및 분석] 수율 관리를 위한 상관성 분석에 대해서 설명하세요",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": false,
     "images": [
       {
@@ -4102,7 +4169,8 @@
     "url": "https://sshmyb.tistory.com/196",
     "title": "[평가 및 분석] FAB 공정 진행 중에는 In-line Monitoring 평가, FAB 공정 완료 후에는 Process Control Monitoring, PCM 평가",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": false,
     "images": [
       {
@@ -4139,7 +4207,8 @@
     "url": "https://sshmyb.tistory.com/195",
     "title": "[반도체 소자] Dynamic/Static Power, Vcc, Vdd, Vee, Vss에 대해서 설명하세요.",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -4186,7 +4255,8 @@
     "url": "https://sshmyb.tistory.com/194",
     "title": "[Yield] : PCM, SPICE Modeling, Corner Margin 평가",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": true,
     "images": [],
     "questions": [],
@@ -4198,7 +4268,8 @@
     "url": "https://sshmyb.tistory.com/192",
     "title": "What Are The Process Corners in VLSI Design",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": false,
     "images": [
       {
@@ -4239,7 +4310,8 @@
     "url": "https://sshmyb.tistory.com/191",
     "title": "[Review] Process Corner Correction",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": true,
     "images": [],
     "questions": [],
@@ -4251,7 +4323,8 @@
     "url": "https://sshmyb.tistory.com/190",
     "title": "[포토 공정] Photo Lithography 공정, 불량 사례",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": true,
     "images": [],
     "questions": [],
@@ -4263,7 +4336,8 @@
     "url": "https://sshmyb.tistory.com/189",
     "title": "[PCM 측정] Process Control Monitor, PCM : Test Structures in Circuit Design",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": true,
     "images": [],
     "questions": [],
@@ -4275,7 +4349,8 @@
     "url": "https://sshmyb.tistory.com/188",
     "title": "[공정 Margin 평가] Process Corner Model 기법을 통한 Margin 평가",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": false,
     "images": [
       {
@@ -4330,7 +4405,8 @@
     "url": "https://sshmyb.tistory.com/187",
     "title": "[반도체 공정] Process Control Monitor, PCM Parameter 총정리 [2/2]",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": false,
     "images": [
       {
@@ -4412,7 +4488,8 @@
     "url": "https://sshmyb.tistory.com/186",
     "title": "[반도체 공정] Process Control Monitor, PCM Parameter 총정리 [1/2]",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": false,
     "images": [
       {
@@ -4511,7 +4588,8 @@
     "url": "https://sshmyb.tistory.com/185",
     "title": "[반도체 소자] 이것만 보면 된다! Leakage Current 총정리 [2/2]",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -4587,7 +4665,8 @@
     "url": "https://sshmyb.tistory.com/184",
     "title": "[반도체 소자] 이것만 보면 된다! Leakage Current 총정리 [1/2]",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -4717,7 +4796,8 @@
     "url": "https://sshmyb.tistory.com/179",
     "title": "[식각공정] 훈련 2 : \"Etching (식각) 공정에 대해서 설명해주세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -4771,7 +4851,8 @@
     "url": "https://sshmyb.tistory.com/174",
     "title": "[DRAM #4]  한 눈에 보는 DRAM 동작원리",
     "main_category": "반도체 소자",
-    "sub_category": "[DRAM] DRAM 메모리",
+    "sub_category": "DRAM",
+    "sub_category_name": "DRAM 메모리",
     "is_protected": false,
     "images": [
       {
@@ -4917,7 +4998,8 @@
     "url": "https://sshmyb.tistory.com/172",
     "title": "[반도체 수율] \"수율 개선을 위한 공정제어기술\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": false,
     "images": [
       {
@@ -4961,7 +5043,8 @@
     "url": "https://sshmyb.tistory.com/171",
     "title": "[반도체 수율] \"수율이 중요하다는데 도대체 수율이 뭘까?\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[Y] 수율 & 공정제어",
+    "sub_category": "Y",
+    "sub_category_name": "수율 & 공정제어 (Yield & PCM)",
     "is_protected": false,
     "images": [
       {
@@ -5004,7 +5087,8 @@
     "url": "https://sshmyb.tistory.com/168",
     "title": "[반도체 소재] \"High-k / Low-k 소재에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -5061,7 +5145,8 @@
     "url": "https://sshmyb.tistory.com/170",
     "title": "[메모리반도체] \"메모리반도체 용어 총정리\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -5114,7 +5199,8 @@
     "url": "https://sshmyb.tistory.com/169",
     "title": "[시스템반도체] \"시스템반도체 용어 총정리\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -5151,7 +5237,8 @@
     "url": "https://sshmyb.tistory.com/167",
     "title": "[NAND Flash (낸드플래시) #4] \"3D NAND, V-NAND에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[NAND] NAND Flash 메모리",
+    "sub_category": "NAND",
+    "sub_category_name": "NAND Flash 메모리",
     "is_protected": false,
     "images": [
       {
@@ -5216,7 +5303,8 @@
     "url": "https://sshmyb.tistory.com/166",
     "title": "[NAND Flash (낸드플래시) #3] \"Charge Trap Flash, CTF에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[NAND] NAND Flash 메모리",
+    "sub_category": "NAND",
+    "sub_category_name": "NAND Flash 메모리",
     "is_protected": false,
     "images": [
       {
@@ -5252,7 +5340,8 @@
     "url": "https://sshmyb.tistory.com/165",
     "title": "[NAND Flash (낸드플래시) #2] \"Cell level, SLC MLC, TLC에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[NAND] NAND Flash 메모리",
+    "sub_category": "NAND",
+    "sub_category_name": "NAND Flash 메모리",
     "is_protected": false,
     "images": [
       {
@@ -5298,7 +5387,8 @@
     "url": "https://sshmyb.tistory.com/164",
     "title": "[NAND Flash (낸드플래시) #1] \"낸드플래시, 플로팅게이트, NAND / NOR Flash\"",
     "main_category": "반도체 소자",
-    "sub_category": "[NAND] NAND Flash 메모리",
+    "sub_category": "NAND",
+    "sub_category_name": "NAND Flash 메모리",
     "is_protected": false,
     "images": [
       {
@@ -5397,7 +5487,8 @@
     "url": "https://sshmyb.tistory.com/159",
     "title": "[DRAM #2] \"고대역폭 메모리 HBM, RCAT, DCAT, 차세대 DRAM\"",
     "main_category": "최신 기술 및 기업",
-    "sub_category": "[HBM] HBM & 차세대 메모리",
+    "sub_category": "HBM",
+    "sub_category_name": "HBM & 차세대 메모리",
     "is_protected": false,
     "images": [
       {
@@ -5458,7 +5549,8 @@
     "url": "https://sshmyb.tistory.com/158",
     "title": "[DRAM #1] \"Dynamic Random Access Memory, D램에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[M] 금속배선 & 패키징",
+    "sub_category": "M",
+    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
     "is_protected": false,
     "images": [
       {
@@ -5511,7 +5603,8 @@
     "url": "https://sshmyb.tistory.com/157",
     "title": "[DDR & LPDDR] \"#DRAM, DDR & LPDDR에 대해서 설명해보세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[DRAM] DRAM 메모리",
+    "sub_category": "DRAM",
+    "sub_category_name": "DRAM 메모리",
     "is_protected": false,
     "images": [
       {
@@ -5536,7 +5629,8 @@
     "url": "https://sshmyb.tistory.com/156",
     "title": "[차세대 메모리] \"Processing-In-Memory, PIM '차세대 메모리'\"",
     "main_category": "최신 기술 및 기업",
-    "sub_category": "[HBM] HBM & 차세대 메모리",
+    "sub_category": "HBM",
+    "sub_category_name": "HBM & 차세대 메모리",
     "is_protected": false,
     "images": [
       {
@@ -5590,7 +5684,8 @@
     "url": "https://sshmyb.tistory.com/151",
     "title": "[증착공정] 훈련 18 : \"반응성 스퍼터링 (Reactive sputtering)에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -5633,7 +5728,8 @@
     "url": "https://sshmyb.tistory.com/150",
     "title": "[증착공정] 훈련 17 : \"전극면적에 따른 자기바이어스 효과, 完\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -5679,7 +5775,8 @@
     "url": "https://sshmyb.tistory.com/147",
     "title": "[증착공정] 훈련 : 16 \"전극 면적에 따른 자기바이어스효과, 中\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -5736,7 +5833,8 @@
     "url": "https://sshmyb.tistory.com/146",
     "title": "[증착공정] 훈련 : 15 \"RF Plasma, 자기바이어스효과에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -5768,7 +5866,8 @@
     "url": "https://sshmyb.tistory.com/145",
     "title": "[증착공정] 훈련 : 14 \"DC Plasma는 부도체 전극에서 플라즈마를 유지할 수 없는 건지, 플라즈마의 collective motion에 대해서 설명하세요.\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -5811,7 +5910,8 @@
     "url": "https://sshmyb.tistory.com/136",
     "title": "[증착공정] 훈련 : 13 \"DC Sputter, 음극전압강하, sheath 영역에 대해서 설명해보세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -5864,7 +5964,8 @@
     "url": "https://sshmyb.tistory.com/134",
     "title": "[증착공정] 훈련 12 : \"플라즈마와 파센 법칙, Paschen's Law\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -5914,7 +6015,8 @@
     "url": "https://sshmyb.tistory.com/133",
     "title": "[증착공정] 훈련 11 : \"Debye length에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -5953,7 +6055,8 @@
     "url": "https://sshmyb.tistory.com/127",
     "title": "[증착공정] 훈련 10 : \"PVD 공정에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -5985,7 +6088,8 @@
     "url": "https://sshmyb.tistory.com/113",
     "title": "[식각공정] 훈련 1 : \"Etching 공정, 용어정리\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -6047,7 +6151,8 @@
     "url": "https://sshmyb.tistory.com/111",
     "title": "[증착공정] 훈련 9 : \"미세공정에 따른 ALD 추가 직무면접\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -6072,7 +6177,8 @@
     "url": "https://sshmyb.tistory.com/110",
     "title": "[증착공정] 훈련 8 : \"Atomic Layer Deposition, ALD에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -6132,7 +6238,8 @@
     "url": "https://sshmyb.tistory.com/109",
     "title": "[증착공정] 훈련 7 : \"Chemical Vapor Deposition, CVD 불량 사례 분석\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": true,
     "images": [],
     "questions": [],
@@ -6144,7 +6251,8 @@
     "url": "https://sshmyb.tistory.com/108",
     "title": "[증착공정] 훈련 6 : \"MOCVD에 대해서 설명하세요.\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -6183,7 +6291,8 @@
     "url": "https://sshmyb.tistory.com/105",
     "title": "[포토공정] \"Mask 3D Effects에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -6222,7 +6331,8 @@
     "url": "https://sshmyb.tistory.com/104",
     "title": "[포토공정] 추가교육 : \"EUV, High-NA 기술원리\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -6268,7 +6378,8 @@
     "url": "https://sshmyb.tistory.com/85",
     "title": "[반도체 소재] \"Plug W(텅스텐) grown on CVD\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -6297,7 +6408,8 @@
     "url": "https://sshmyb.tistory.com/84",
     "title": "[반도체 소재] \"Si3N4, SiON grown on LPCVD & PECVD\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -6330,7 +6442,8 @@
     "url": "https://sshmyb.tistory.com/83",
     "title": "[반도체 소재] \"SiO2 grown on LPCVD & PECVD\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -6374,7 +6487,8 @@
     "url": "https://sshmyb.tistory.com/82",
     "title": "[증착공정] 훈련 5 : \"Evolution of Chemical Vapor Deposition, CVD\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -6394,7 +6508,8 @@
     "url": "https://sshmyb.tistory.com/81",
     "title": "[증착공정] 훈련 4 : \"PECVD, HDPCVD에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -6444,7 +6559,8 @@
     "url": "https://sshmyb.tistory.com/80",
     "title": "[증착공정] 훈련 3 : \"APCVD, LPCVD에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -6491,7 +6607,8 @@
     "url": "https://sshmyb.tistory.com/79",
     "title": "[증착공정] 훈련 2 : \"Chemical Vapor Deposition, CVD에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -6534,7 +6651,8 @@
     "url": "https://sshmyb.tistory.com/78",
     "title": "[증착공정] 훈련 1 : \"Deposition 용어 정리\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[D] 박막 & 증착 공정",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -6592,7 +6710,8 @@
     "url": "https://sshmyb.tistory.com/76",
     "title": "[전력반도체] \"Power Module IC, PMIC에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[PWR] 전력반도체 & 특수소자",
+    "sub_category": "PWR",
+    "sub_category_name": "전력반도체 & 특수소자",
     "is_protected": false,
     "images": [
       {
@@ -6635,7 +6754,8 @@
     "url": "https://sshmyb.tistory.com/75",
     "title": "[반도체] \"CMOS Image Sensor, CIS vs CCD에 대해서 설명해보세요.",
     "main_category": "반도체 소자",
-    "sub_category": "[PWR] 전력반도체 & 특수소자",
+    "sub_category": "PWR",
+    "sub_category_name": "전력반도체 & 특수소자",
     "is_protected": false,
     "images": [
       {
@@ -6679,7 +6799,8 @@
     "url": "https://sshmyb.tistory.com/74",
     "title": "[디스플레이] \"T-CON (Timing Controller)에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[PWR] 전력반도체 & 특수소자",
+    "sub_category": "PWR",
+    "sub_category_name": "전력반도체 & 특수소자",
     "is_protected": false,
     "images": [
       {
@@ -6711,7 +6832,8 @@
     "url": "https://sshmyb.tistory.com/73",
     "title": "[디스플레이] \"Display Driver IC, DDI에 대해서 설명해보세요",
     "main_category": "반도체 소자",
-    "sub_category": "[PWR] 전력반도체 & 특수소자",
+    "sub_category": "PWR",
+    "sub_category_name": "전력반도체 & 특수소자",
     "is_protected": false,
     "images": [
       {
@@ -6757,7 +6879,8 @@
     "url": "https://sshmyb.tistory.com/69",
     "title": "[반도체 소자] 3nm/2nm 공정 GAAFET, 반도체 산업",
     "main_category": "최신 기술 및 기업",
-    "sub_category": "[FND] 파운드리 & 선단공정",
+    "sub_category": "FND",
+    "sub_category_name": "파운드리 & 선단공정",
     "is_protected": false,
     "images": [
       {
@@ -6777,7 +6900,8 @@
     "url": "https://sshmyb.tistory.com/67",
     "title": "[반도체 소자] 3D MOSFET의 진화, Gate-All-Around / 차세대 소자",
     "main_category": "반도체 소자",
-    "sub_category": "[GAA] 3D 트랜지스터 (FinFET/GAA)",
+    "sub_category": "GAA",
+    "sub_category_name": "3D 트랜지스터 (FinFET/GAA)",
     "is_protected": false,
     "images": [
       {
@@ -6820,7 +6944,8 @@
     "url": "https://sshmyb.tistory.com/66",
     "title": "[반도체 소자] \"FinFET 소자에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[GAA] 3D 트랜지스터 (FinFET/GAA)",
+    "sub_category": "GAA",
+    "sub_category_name": "3D 트랜지스터 (FinFET/GAA)",
     "is_protected": false,
     "images": [
       {
@@ -6894,7 +7019,8 @@
     "url": "https://sshmyb.tistory.com/65",
     "title": "[평가 및 분석] \"X-ray Diffraction, XRD에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -6996,7 +7122,8 @@
     "url": "https://sshmyb.tistory.com/64",
     "title": "[반도체 소자] \"공정 미세화 고비용 구조 깬다.. FD-SOI\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -7023,7 +7150,8 @@
     "url": "https://sshmyb.tistory.com/62",
     "title": "[반도체 소자] \"Silicon on Insulator, SOI 기술에 대해서 설명하세요.\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -7062,7 +7190,8 @@
     "url": "https://sshmyb.tistory.com/61",
     "title": "[반도체 소자] \"I-MOS, TFET, NC-FET, Suspended FET\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -7152,7 +7281,8 @@
     "url": "https://sshmyb.tistory.com/59",
     "title": "[반도체 소자] : [Short Channel Effect #6] \"심화내용, Channel length Effects\"",
     "main_category": "반도체 소자",
-    "sub_category": "[SCE] 단채널 효과 & 신뢰성",
+    "sub_category": "SCE",
+    "sub_category_name": "단채널 효과 & 신뢰성",
     "is_protected": false,
     "images": [
       {
@@ -7193,7 +7323,8 @@
     "url": "https://sshmyb.tistory.com/58",
     "title": "[반도체 소자] : [Short Channel Effect #5] \"심화내용, body doping effect\"",
     "main_category": "반도체 소자",
-    "sub_category": "[SCE] 단채널 효과 & 신뢰성",
+    "sub_category": "SCE",
+    "sub_category_name": "단채널 효과 & 신뢰성",
     "is_protected": false,
     "images": [
       {
@@ -7255,7 +7386,8 @@
     "url": "https://sshmyb.tistory.com/54",
     "title": "[반도체 소자] : [Short Channel Effect #4] \"GIDL / Hot carrier injection에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[E] 식각 공정",
+    "sub_category": "E",
+    "sub_category_name": "식각 공정 (Etch)",
     "is_protected": false,
     "images": [
       {
@@ -7308,7 +7440,8 @@
     "url": "https://sshmyb.tistory.com/53",
     "title": "[반도체 소자] : [Short Channel Effect #3] \"Velocity Saturation에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[SCE] 단채널 효과 & 신뢰성",
+    "sub_category": "SCE",
+    "sub_category_name": "단채널 효과 & 신뢰성",
     "is_protected": false,
     "images": [
       {
@@ -7370,7 +7503,8 @@
     "url": "https://sshmyb.tistory.com/52",
     "title": "[반도체 소자] : [Short Channel Effect #2] \"Punch Through에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[SCE] 단채널 효과 & 신뢰성",
+    "sub_category": "SCE",
+    "sub_category_name": "단채널 효과 & 신뢰성",
     "is_protected": false,
     "images": [
       {
@@ -7411,7 +7545,8 @@
     "url": "https://sshmyb.tistory.com/51",
     "title": "[반도체 소자] : [Short Channel Effect #1] \"DIBL, Subthreshold Current에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[SCE] 단채널 효과 & 신뢰성",
+    "sub_category": "SCE",
+    "sub_category_name": "단채널 효과 & 신뢰성",
     "is_protected": false,
     "images": [
       {
@@ -7499,7 +7634,8 @@
     "url": "https://sshmyb.tistory.com/50",
     "title": "[반도체 소자] \"Channel이 짧아지면 threshold voltage가 왜 작아지나요?\"",
     "main_category": "반도체 소자",
-    "sub_category": "[SCE] 단채널 효과 & 신뢰성",
+    "sub_category": "SCE",
+    "sub_category_name": "단채널 효과 & 신뢰성",
     "is_protected": false,
     "images": [
       {
@@ -7533,7 +7669,8 @@
     "url": "https://sshmyb.tistory.com/49",
     "title": "[반도체 소자] \"Subthreshold Swing, SS 특성 세부정리\"",
     "main_category": "반도체 소자",
-    "sub_category": "[SCE] 단채널 효과 & 신뢰성",
+    "sub_category": "SCE",
+    "sub_category_name": "단채널 효과 & 신뢰성",
     "is_protected": false,
     "images": [
       {
@@ -7672,7 +7809,8 @@
     "url": "https://sshmyb.tistory.com/47",
     "title": "[반도체 소자] \"Subthreshold Swing, SS 특성에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[SCE] 단채널 효과 & 신뢰성",
+    "sub_category": "SCE",
+    "sub_category_name": "단채널 효과 & 신뢰성",
     "is_protected": false,
     "images": [
       {
@@ -7713,7 +7851,8 @@
     "url": "https://sshmyb.tistory.com/46",
     "title": "[반도체 소자] \"소자의 출력특성, Output Characteristics\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -7773,7 +7912,8 @@
     "url": "https://sshmyb.tistory.com/44",
     "title": "[포토공정] 추가교육 : \"교육생들 질문 photoresist technology #3\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -7813,7 +7953,8 @@
     "url": "https://sshmyb.tistory.com/40",
     "title": "[포토공정] 추가교육 : \"교육생들 질문 photoresist technology #2\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -7849,7 +7990,8 @@
     "url": "https://sshmyb.tistory.com/36",
     "title": "[포토공정] 추가교육 :  \"교육생들 질문 photoresist technology #1 \"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -7896,7 +8038,8 @@
     "url": "https://sshmyb.tistory.com/35",
     "title": "[반도체 소자] : \"HKMG에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -7923,7 +8066,8 @@
     "url": "https://sshmyb.tistory.com/34",
     "title": "[평가 및 분석] \"NBTI, PBTI, HCI에 대해서 설명해보세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -7948,7 +8092,8 @@
     "url": "https://sshmyb.tistory.com/33",
     "title": "[평가 및 분석] LCR 미터 \"커패시턴스 측정 방법\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -7968,7 +8113,8 @@
     "url": "https://sshmyb.tistory.com/25",
     "title": "[패키징 공정] \"TSV (Through Silicon Via)에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[M] 금속배선 & 패키징",
+    "sub_category": "M",
+    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
     "is_protected": false,
     "images": [
       {
@@ -8000,7 +8146,8 @@
     "url": "https://sshmyb.tistory.com/24",
     "title": "[반도체 소자] : \"Body Effect에 대해서 설명하세요\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -8074,7 +8221,8 @@
     "url": "https://sshmyb.tistory.com/21",
     "title": "[반도체 소자] \"Threshold voltage modulation\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -8113,7 +8261,8 @@
     "url": "https://sshmyb.tistory.com/18",
     "title": "[반도체 소자] \"MOS Capacitor와  MOSFET의 차이\"",
     "main_category": "반도체 소자",
-    "sub_category": "[MOS] MOSFET 기초 & 소자물리",
+    "sub_category": "MOS",
+    "sub_category_name": "MOSFET 기초 & 소자물리",
     "is_protected": false,
     "images": [
       {
@@ -8170,7 +8319,8 @@
     "url": "https://sshmyb.tistory.com/14",
     "title": "[포토공정] 훈련 10 : \"EUV의 이슈에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -8214,7 +8364,8 @@
     "url": "https://sshmyb.tistory.com/13",
     "title": "[포토공정] 훈련 9 : \"ArF-immersion, DPT, QPT에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -8257,7 +8408,8 @@
     "url": "https://sshmyb.tistory.com/12",
     "title": "[포토공정] 훈련 8 :  \"포토공정 내 수율을 저하시키는 요인\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -8289,7 +8441,8 @@
     "url": "https://sshmyb.tistory.com/11",
     "title": "[포토공정] 훈련 7 :  \"Photoresist technology\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -8325,7 +8478,8 @@
     "url": "https://sshmyb.tistory.com/10",
     "title": "[포토공정] 훈련 6 : \"포토공정, 공정여유 or 공정마진\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -8369,7 +8523,8 @@
     "url": "https://sshmyb.tistory.com/9",
     "title": "[포토공정] 훈련 5 : \"Resolution과 DoF의 관계에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -8408,7 +8563,8 @@
     "url": "https://sshmyb.tistory.com/7",
     "title": "[포토공정] 훈련 4 : \"Resolution에 대해서 공식으로 설명해보세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -8444,7 +8600,8 @@
     "url": "https://sshmyb.tistory.com/6",
     "title": "[포토공정] 훈련 3 : \"Illumination mode, OPC, PSM 기술\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -8505,7 +8662,8 @@
     "url": "https://sshmyb.tistory.com/5",
     "title": "[포토공정] 훈련 2 : \"포토마스크에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {
@@ -8573,7 +8731,8 @@
     "url": "https://sshmyb.tistory.com/4",
     "title": "[포토공정] 훈련 1 :  \"포토공정에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "[P] 포토 공정",
+    "sub_category": "P",
+    "sub_category_name": "포토 공정 (Photo)",
     "is_protected": false,
     "images": [
       {

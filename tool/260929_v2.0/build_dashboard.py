@@ -252,37 +252,51 @@ html_template = """<!DOCTYPE html>
     /* Subcategory Chips */
     .subcat-filter-bar {
       display: flex;
-      gap: 6px;
-      padding: 8px 12px;
+      gap: 4px;
+      padding: 8px 10px;
       overflow-x: auto;
       border-bottom: 1px solid var(--border);
       background: var(--bg-sidebar);
       flex-shrink: 0;
+      scrollbar-width: thin;
     }
     .subcat-filter-bar::-webkit-scrollbar { height: 4px; }
     .subcat-filter-bar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
     .subcat-chip {
-      padding: 4px 10px;
+      padding: 5px 8px;
       font-size: 11px;
-      font-weight: 600;
-      border-radius: 14px;
+      font-weight: 800;
+      border-radius: 6px;
       background: var(--bg-main);
       color: var(--text-sub);
       border: 1px solid var(--border);
       white-space: nowrap;
       cursor: pointer;
       transition: all 0.15s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      min-width: 28px;
+      text-align: center;
     }
     .subcat-chip:hover {
       border-color: var(--primary);
       color: var(--primary);
+      background: var(--primary-light);
     }
     .subcat-chip.active {
-      background: var(--primary-light);
+      background: var(--primary);
       border-color: var(--primary);
-      color: var(--primary);
-      font-weight: 700;
+      color: #ffffff;
+      font-weight: 800;
+      box-shadow: 0 2px 4px rgba(37, 99, 235, 0.25);
+    }
+    .chip-cnt {
+      font-size: 10px;
+      opacity: 0.85;
+      font-weight: 600;
     }
 
     /* Post List */
@@ -322,13 +336,32 @@ html_template = """<!DOCTYPE html>
     }
     .post-item-subcat {
       font-size: 11px;
-      font-weight: 700;
-      color: var(--primary);
+      font-weight: 800;
       padding: 2px 7px;
-      background: rgba(37, 99, 235, 0.08);
       border-radius: 4px;
-      border: 1px solid rgba(37, 99, 235, 0.2);
+      display: inline-block;
+      text-align: center;
+      min-width: 22px;
     }
+    .badge-p { background: rgba(2, 132, 199, 0.12); color: #0284c7; border: 1px solid rgba(2, 132, 199, 0.3); }
+    .badge-e { background: rgba(234, 88, 12, 0.12); color: #ea580c; border: 1px solid rgba(234, 88, 12, 0.3); }
+    .badge-d { background: rgba(139, 92, 246, 0.12); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.3); }
+    .badge-i { background: rgba(5, 150, 105, 0.12); color: #059669; border: 1px solid rgba(5, 150, 105, 0.3); }
+    .badge-t { background: rgba(220, 38, 38, 0.12); color: #dc2626; border: 1px solid rgba(220, 38, 38, 0.3); }
+    .badge-c { background: rgba(13, 148, 136, 0.12); color: #0d9488; border: 1px solid rgba(13, 148, 136, 0.3); }
+    .badge-m { background: rgba(217, 119, 6, 0.12); color: #d97706; border: 1px solid rgba(217, 119, 6, 0.3); }
+    .badge-y { background: rgba(79, 70, 229, 0.12); color: #4f46e5; border: 1px solid rgba(79, 70, 229, 0.3); }
+    
+    .badge-mos { background: rgba(37, 99, 235, 0.12); color: #2563eb; border: 1px solid rgba(37, 99, 235, 0.3); }
+    .badge-sce { background: rgba(219, 39, 119, 0.12); color: #db2777; border: 1px solid rgba(219, 39, 119, 0.3); }
+    .badge-gaa { background: rgba(14, 165, 233, 0.12); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.3); }
+    .badge-dram { background: rgba(16, 185, 129, 0.12); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-nand { background: rgba(245, 158, 11, 0.12); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .badge-pwr { background: rgba(239, 68, 68, 0.12); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.3); }
+    
+    .badge-hbm { background: rgba(99, 102, 241, 0.12); color: #6366f1; border: 1px solid rgba(99, 102, 241, 0.3); }
+    .badge-fnd { background: rgba(20, 184, 166, 0.12); color: #14b8a6; border: 1px solid rgba(20, 184, 166, 0.3); }
+    .badge-mkt { background: rgba(100, 116, 139, 0.12); color: #64748b; border: 1px solid rgba(100, 116, 139, 0.3); }
     .post-item-id {
       font-size: 11px;
       font-weight: 600;
@@ -781,10 +814,30 @@ html_template = """<!DOCTYPE html>
       }
     }
 
+    const PROCESS_NAMES = {
+      'P': '포토 공정 (Photo)',
+      'E': '식각 공정 (Etch)',
+      'D': '박막 & 증착 공정 (Deposition)',
+      'I': '이온주입 공정 (Ion Implantation)',
+      'T': '확산 & 열처리 공정 (Thermal)',
+      'C': 'CMP & 세정 공정 (Cleaning & CMP)',
+      'M': '금속배선 & 패키징 (Metal & Packaging)',
+      'Y': '수율 & 공정제어 (Yield & PCM)',
+      'MOS': 'MOSFET 기초 & 소자물리',
+      'SCE': '단채널 효과 & 신뢰성',
+      'GAA': '3D 트랜지스터 (FinFET/GAA)',
+      'DRAM': 'DRAM 메모리',
+      'NAND': 'NAND Flash 메모리',
+      'PWR': '전력반도체 & 특수소자',
+      'HBM': 'HBM & 차세대 메모리',
+      'FND': '파운드리 & 선단공정',
+      'MKT': '기업 & 시장 동향'
+    };
+
     function setSubCategory(sub) {
       currentSubCat = sub;
       document.querySelectorAll('.subcat-chip').forEach(chip => {
-        chip.classList.toggle('active', chip.textContent === sub || (sub === '전체' && chip.textContent.includes('전체')));
+        chip.classList.toggle('active', chip.getAttribute('data-sub') === sub);
       });
       renderPostList();
       const filtered = getFilteredPosts();
@@ -799,7 +852,7 @@ html_template = """<!DOCTYPE html>
         if (currentSubCat !== '전체' && p.sub_category !== currentSubCat) return false;
         if (searchQuery) {
           const matchTitle = p.title.toLowerCase().includes(searchQuery);
-          const matchSub = p.sub_category.toLowerCase().includes(searchQuery);
+          const matchSub = (p.sub_category + " " + (p.sub_category_name || '')).toLowerCase().includes(searchQuery);
           const matchText = p.verbatim_text.toLowerCase().includes(searchQuery);
           if (!matchTitle && !matchSub && !matchText) return false;
         }
@@ -813,12 +866,26 @@ html_template = """<!DOCTYPE html>
       if (currentMainCat !== '전체') {
         relevantPosts = ALL_POSTS.filter(p => p.main_category === currentMainCat);
       }
-      const subcats = Array.from(new Set(relevantPosts.map(p => p.sub_category))).filter(Boolean);
       
-      let html = `<span class="subcat-chip ${currentSubCat === '전체' ? 'active' : ''}" onclick="setSubCategory('전체')">전체 (${relevantPosts.length})</span>`;
+      let subcats = [];
+      if (currentMainCat === '반도체 8대 공정') {
+        subcats = ['P', 'E', 'D', 'I', 'T', 'C', 'M', 'Y'];
+      } else if (currentMainCat === '반도체 소자') {
+        subcats = ['MOS', 'SCE', 'GAA', 'DRAM', 'NAND', 'PWR'];
+      } else if (currentMainCat === '최신 기술 및 기업') {
+        subcats = ['HBM', 'FND', 'MKT'];
+      } else {
+        subcats = ['P', 'E', 'D', 'I', 'T', 'C', 'M', 'Y', 'MOS', 'SCE', 'GAA', 'DRAM', 'NAND', 'PWR', 'HBM', 'FND'];
+      }
+      
+      let html = `<span class="subcat-chip ${currentSubCat === '전체' ? 'active' : ''}" data-sub="전체" onclick="setSubCategory('전체')" title="전체 (${relevantPosts.length}개)">전체 <span class="chip-cnt">${relevantPosts.length}</span></span>`;
+      
       subcats.forEach(sub => {
         const count = relevantPosts.filter(p => p.sub_category === sub).length;
-        html += `<span class="subcat-chip ${currentSubCat === sub ? 'active' : ''}" onclick="setSubCategory('${sub}')">${sub} (${count})</span>`;
+        if (count > 0 || currentMainCat === '반도체 8대 공정') {
+          const fullName = PROCESS_NAMES[sub] || sub;
+          html += `<span class="subcat-chip ${currentSubCat === sub ? 'active' : ''}" data-sub="${sub}" onclick="setSubCategory('${sub}')" title="${sub}: ${fullName} (${count}개)">${sub} <span class="chip-cnt">${count}</span></span>`;
+        }
       });
       container.innerHTML = html;
     }
@@ -836,10 +903,12 @@ html_template = """<!DOCTYPE html>
         const isActive = (String(p.id) === String(currentPostId));
         const qCount = p.questions ? p.questions.length : 0;
         const imgCount = p.images ? p.images.length : 0;
+        const badgeClass = 'badge-' + (p.sub_category || '').toLowerCase();
+        const fullName = p.sub_category_name || PROCESS_NAMES[p.sub_category] || p.sub_category;
         return `
           <div class="post-item ${isActive ? 'active' : ''}" data-id="${p.id}" onclick="selectPost('${p.id}')">
             <div class="post-item-meta">
-              <span class="post-item-subcat">${escapeHtml(p.sub_category)}</span>
+              <span class="post-item-subcat ${badgeClass}" title="${fullName}">${escapeHtml(p.sub_category)}</span>
               <span class="post-item-id">#${p.id}</span>
             </div>
             <div class="post-item-title">${escapeHtml(p.title)}</div>
@@ -859,8 +928,9 @@ html_template = """<!DOCTYPE html>
       if (!post) return;
 
       // Update Header
+      const fullName = post.sub_category_name || PROCESS_NAMES[post.sub_category] || post.sub_category;
       document.getElementById('viewPostMainCat').textContent = '🚀 ' + post.main_category;
-      document.getElementById('viewPostSubCat').textContent = post.sub_category;
+      document.getElementById('viewPostSubCat').textContent = `[${post.sub_category}] ${fullName}`;
       document.getElementById('viewPostTitle').textContent = post.title;
 
       // Update QA

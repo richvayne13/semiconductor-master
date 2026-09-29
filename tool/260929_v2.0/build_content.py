@@ -19,59 +19,59 @@ def classify_post(title, subcat):
     # 1. 최신 기술 및 기업 (Tech & Market)
     if any(k in t for k in ['hbm', 'tsmc', '2nm', 'n2 공정', '18a', 'samsung vs. tsmc', '삼성 vs. tsmc', '시장 전망', '차세대 메모리] "processing-in-memory', 'pim']):
         if 'hbm' in t or 'pim' in t:
-            return "최신 기술 및 기업", "[HBM] HBM & 차세대 메모리"
+            return "최신 기술 및 기업", "HBM", "HBM & 차세대 메모리"
         elif any(k in t for k in ['tsmc', '2nm', 'n2', '18a', 'samsung vs. tsmc']):
-            return "최신 기술 및 기업", "[FND] 파운드리 & 선단공정"
+            return "최신 기술 및 기업", "FND", "파운드리 & 선단공정"
         else:
-            return "최신 기술 및 기업", "[MKT] 기업 & 시장 동향"
+            return "최신 기술 및 기업", "MKT", "기업 & 시장 동향"
 
-    # 2. 반도체 8대 공정 (Title-first precision matching with single-letter prefixes)
-    # [P] 포토 공정
+    # 2. 반도체 8대 공정 (8 Major Processes - Pure Initials P, E, D, I, T, C, M, Y)
+    # P : 포토 공정 (Photo)
     if any(k in t for k in ['포토', 'photo', 'litho', '노광', 'euv', 'arf', 'mask 3d', 'high-na', 'opc', 'psm']):
-        return "반도체 8대 공정", "[P] 포토 공정"
-    # [E] 식각 공정
+        return "반도체 8대 공정", "P", "포토 공정 (Photo)"
+    # E : 식각 공정 (Etch)
     if any(k in t for k in ['식각', '에치', 'etch', '플라즈마', 'plasma', 'ale', 'rie', 'bosch']):
-        return "반도체 8대 공정", "[E] 식각 공정"
-    # [D] 박막 & 증착 공정
+        return "반도체 8대 공정", "E", "식각 공정 (Etch)"
+    # D : 박막 & 증착 공정 (Deposition)
     if any(k in t for k in ['증착', 'deposition', 'cvd', 'ald', 'pvd', 'sputter', '스퍼터링', 'passivation', 'encapsulation', '봉지 공정', 'high-k / low-k', 'plug w', 'si3n4', 'sio2 grown', '2차원 소재']):
-        return "반도체 8대 공정", "[D] 박막 & 증착 공정"
-    # [I] 이온주입 공정
+        return "반도체 8대 공정", "D", "박막 & 증착 공정 (Deposition)"
+    # I : 이온주입 공정 (Ion Implantation)
     if any(k in t for k in ['이온주입', 'ion implant', 'implant 공정', 'doping profile', 'stopping mechanism', 'shallow junction']):
-        return "반도체 8대 공정", "[I] 이온주입 공정"
-    # [T] 확산 & 열처리 공정
+        return "반도체 8대 공정", "I", "이온주입 공정 (Ion Implantation)"
+    # T : 확산 & 열처리 공정 (Thermal)
     if any(k in t for k in ['diffusion 공정', '산화', '열산화', 'oxidation', 'anneal', '열처리']):
-        return "반도체 8대 공정", "[T] 확산 & 열처리 공정"
-    # [C] CMP & 세정 공정
+        return "반도체 8대 공정", "T", "확산 & 열처리 공정 (Thermal)"
+    # C : CMP & 세정 공정 (Cleaning & CMP)
     if any(k in t for k in ['세정', 'cleaning', 'cmp', '평탄화', 'c&c']):
-        return "반도체 8대 공정", "[C] CMP & 세정 공정"
-    # [M] 금속배선 & 패키징
+        return "반도체 8대 공정", "C", "CMP & 세정 공정 (Cleaning & CMP)"
+    # M : 금속배선 & 패키징 (Metal & Packaging)
     if any(k in t for k in ['금속공정', '금속 공정', '메탈 공정', 'salicide', '살리사이드', 'schottky', 'ohmic', '쇼트키', '오믹', '패키징', 'tsv', 'electro migration', 'em', 'sm 저항성']):
-        return "반도체 8대 공정", "[M] 금속배선 & 패키징"
-    # [Y] 수율 & 공정제어
+        return "반도체 8대 공정", "M", "금속배선 & 패키징 (Metal & Packaging)"
+    # Y : 수율 & 공정제어 (Yield & PCM)
     if any(k in t for k in ['수율', 'yield', 'pcm', 'process control', 'process corner', 'shmoo plot', '상관성 분석', 'in-line monitoring', 'cmos process flow', '불량사례', '불랑사례', '불량 사례', '공정 margin']):
-        return "반도체 8대 공정", "[Y] 수율 & 공정제어"
+        return "반도체 8대 공정", "Y", "수율 & 공정제어 (Yield & PCM)"
 
-    # 3. 반도체 소자
-    # [DRAM]
+    # 3. 반도체 소자 (Devices - Compact Codes)
+    # DRAM
     if any(k in t for k in ['dram', 'ddr', 'lpddr']):
-        return "반도체 소자", "[DRAM] DRAM 메모리"
-    # [NAND]
+        return "반도체 소자", "DRAM", "DRAM 메모리"
+    # NAND
     if any(k in t for k in ['nand', '낸드', 'ctf', 'slc', 'mlc', 'tlc', '플로팅게이트', 'flash']):
-        return "반도체 소자", "[NAND] NAND Flash 메모리"
-    # [GAA]
+        return "반도체 소자", "NAND", "NAND Flash 메모리"
+    # GAA
     if any(k in t for k in ['finfet', 'gaa', 'gate-all-around']):
-        return "반도체 소자", "[GAA] 3D 트랜지스터 (FinFET/GAA)"
-    # [SCE]
+        return "반도체 소자", "GAA", "3D 트랜지스터 (FinFET/GAA)"
+    # SCE
     if any(k in t for k in ['short channel', 'dibl', 'punch through', 'velocity saturation', 'gidl', 'hot carrier', 'subthreshold swing', 'ss 특성', 'channel이 짧아지면']):
-        return "반도체 소자", "[SCE] 단채널 효과 & 신뢰성"
-    # [PWR]
+        return "반도체 소자", "SCE", "단채널 효과 & 신뢰성"
+    # PWR
     if any(k in t for k in ['전력반도체', 'power device', 'sic', 'gan', '화합물', 'pmic', 'cis', 'ccd', 't-con', 'ddi']):
-        return "반도체 소자", "[PWR] 전력반도체 & 특수소자"
-    # [MOS]
+        return "반도체 소자", "PWR", "전력반도체 & 특수소자"
+    # MOS
     if any(k in t for k in ['mosfet', 'mos capacitor', 'threshold voltage', 'body effect', '출력특성', 'power current', 'dynamic/static power', 'hkmg', 'fd-soi', 'soi 기술', 'leakage current', 'i-mos', 't-fet', 'nc-fet', 'suspended fet', '메모리반도체 용어', '시스템반도체 용어', 'xrd', 'nbti', 'pbti', 'hci', 'lcr 미터', '커패시턴스 측정']):
-        return "반도체 소자", "[MOS] MOSFET 기초 & 소자물리"
+        return "반도체 소자", "MOS", "MOSFET 기초 & 소자물리"
         
-    return "반도체 8대 공정", "[기타] 공정 일반 & 종합"
+    return "반도체 8대 공정", "기타", "공정 일반 & 종합"
 
 def clean_and_interleave_html(raw_html, images_list, post_id):
     if not raw_html or not raw_html.strip():
@@ -120,7 +120,7 @@ for item in catalog:
     post_id = str(item['id'])
     post_file = posts_dir / f"{post_id}.json"
     
-    main_cat, sub_cat = classify_post(item['title'], item.get('subcat', ''))
+    main_cat, sub_code, sub_name = classify_post(item['title'], item.get('subcat', ''))
     
     if not post_file.exists():
         # Protected or missing post
@@ -129,7 +129,8 @@ for item in catalog:
             "url": item['url'],
             "title": item['title'],
             "main_category": main_cat,
-            "sub_category": sub_cat,
+            "sub_category": sub_code,
+            "sub_category_name": sub_name,
             "is_protected": True,
             "images": [],
             "questions": [],
@@ -155,7 +156,8 @@ for item in catalog:
         "url": item['url'],
         "title": item['title'],
         "main_category": main_cat,
-        "sub_category": sub_cat,
+        "sub_category": sub_code,
+        "sub_category_name": sub_name,
         "is_protected": is_protected,
         "images": images_list,
         "questions": pdata.get('questions', []),
