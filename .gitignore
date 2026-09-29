@@ -1,0 +1,5 @@
+# Scratch and temp files
+tool/scratch/
+*.log
+*.tmp
+__pycache__/

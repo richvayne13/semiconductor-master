@@ -1,0 +1,23 @@
+{
+  "id": "203",
+  "url": "https://sshmyb.tistory.com/203",
+  "title": "[식각공정] 훈련 8 : 이온 질량에 따른 RF Frequency가 미치는 영향",
+  "subcat": "",
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://blog.kakaocdn.net/dna/kQuw5/btrzkpEzbVQ/AAAAAAAAAAAAAAAAAAAAAG50fcIog2hxQ2qZUtcYFukW2-ecs7s0_YSKYZXSLlFO/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=0oYr0b28cp5W8p48fXJ9j4k1vMg%3D",
+      "local_filename": "203_0.jpg",
+      "local_path": "C:\\Work\\반도체\\context\\images\\203_0.jpg",
+      "exists": true
+    }
+  ],
+  "questions": [
+    {
+      "header": "[질문 1]. Etch 공정에서 RF Frequency가 미치는 영향에 대해서 설명해주세요.",
+      "question": ". Etch 공정에서 RF Frequency가 미치는 영향에 대해서 설명해주세요."
+    }
+  ],
+  "verbatim_text": "Etch 공정시 이온의 질량에 따라 RF Bias Frequency가 중요 인자로 작용합니다. 앞선 Conductor & Dielectric Etch 파트에서 다루었어야 했는데, 누락돼서 짧게 글을 올리는 점 양해부탁드립니다.\n[질문 1]. Etch 공정에서 RF Frequency가 미치는 영향에 대해서 설명해주세요.\nEtchant Gas가 주입되고 Plasma를 형성했을 때, 무거운 이온일수록 낮은 RF Frequency, 가벼운 이온일수록 높은 Frequency 조건에서 효율적인 Etching이 일어납니다. 무거운 이온일수록 높은 Frequency에서 반응속도가 낮습니다. 그래서 이온이 충분한 에너지를 가질 수 없기 때문에 낮은 Frequency에서 충분히 가속될 시간이 주어지면서 높은 이온에너지를 확보할 수 있습니다. 그래서 비교적 단단한 Dielectric Etching 시에는 고에너지가 요구되기 때문에 Bias Frequency가 낮을수록 좋습니다.\nCCP Type Plasma Source는 Dual Frequency를 사용합니다. Frequency를 외부에서 인가해주면 RF Power의 주기를 낮추는 방향으로 갑니다. 그 이유는 기본적으로 이온이 무거운 질량일 때, RF Frequency에 반응하는 속도가 낮기 때문입니다. 그러다보니 RF 주기가 크면 이온이 주기에 따라 운동하지 못하게 되면서 평균에너지를 가지는 반면에 RF 주기를 낮추면 충분한 이온 반응시간이 주어지기 때문에 높은 이온에너지를 확보할 수 있는 장점이 있습니다.  그래서 Etch 공정에서 Plasma 기술은 Low Frequency Power로 공정이 개발되고 있는 추세입니다.",
+  "raw_html": "<div class=\"contents_style\"><figure class=\"imageblock alignCenter\" data-ke-mobilestyle=\"widthOrigin\" data-origin-height=\"505\" data-origin-width=\"655\"><span data-phocus=\"https://blog.kakaocdn.net/dna/kQuw5/btrzkpEzbVQ/AAAAAAAAAAAAAAAAAAAAAG50fcIog2hxQ2qZUtcYFukW2-ecs7s0_YSKYZXSLlFO/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1790780399&amp;allow_ip=&amp;allow_referer=&amp;signature=0oYr0b28cp5W8p48fXJ9j4k1vMg%3D\" data-url=\"https://blog.kakaocdn.net/dna/kQuw5/btrzkpEzbVQ/AAAAAAAAAAAAAAAAAAAAAG50fcIog2hxQ2qZUtcYFukW2-ecs7s0_YSKYZXSLlFO/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1790780399&amp;allow_ip=&amp;allow_referer=&amp;signature=0oYr0b28cp5W8p48fXJ9j4k1vMg%3D\"><img data-origin-height=\"505\" data-origin-width=\"655\" height=\"505\" loading=\"lazy\" onerror=\"this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';\" src=\"https://blog.kakaocdn.net/dna/kQuw5/btrzkpEzbVQ/AAAAAAAAAAAAAAAAAAAAAG50fcIog2hxQ2qZUtcYFukW2-ecs7s0_YSKYZXSLlFO/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1790780399&amp;allow_ip=&amp;allow_referer=&amp;signature=0oYr0b28cp5W8p48fXJ9j4k1vMg%3D\" srcset=\"https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FkQuw5%2FbtrzkpEzbVQ%2FAAAAAAAAAAAAAAAAAAAAAG50fcIog2hxQ2qZUtcYFukW2-ecs7s0_YSKYZXSLlFO%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D0oYr0b28cp5W8p48fXJ9j4k1vMg%253D\" width=\"655\"/></span></figure>\n<blockquote data-ke-style=\"style1\">Etch 공정시 이온의 질량에 따라 RF Bias Frequency가 중요 인자로 작용합니다. 앞선 Conductor &amp; Dielectric Etch 파트에서 다루었어야 했는데, 누락돼서 짧게 글을 올리는 점 양해부탁드립니다.</blockquote><hr data-ke-style=\"style7\" data-ke-type=\"horizontalRule\"/><h3 data-ke-size=\"size23\" style=\"text-align: center;\"><b>[질문 1]. Etch 공정에서 RF Frequency가 미치는 영향에 대해서 설명해주세요.</b></h3><blockquote data-ke-style=\"style3\">Etchant Gas가 주입되고 Plasma를 형성했을 때, 무거운 이온일수록 낮은 RF Frequency, 가벼운 이온일수록 높은 Frequency 조건에서 효율적인 Etching이 일어납니다. 무거운 이온일수록 높은 Frequency에서 반응속도가 낮습니다. 그래서 이온이 충분한 에너지를 가질 수 없기 때문에 낮은 Frequency에서 충분히 가속될 시간이 주어지면서 높은 이온에너지를 확보할 수 있습니다. 그래서 비교적 단단한 Dielectric Etching 시에는 고에너지가 요구되기 때문에 Bias Frequency가 낮을수록 좋습니다. <br/><br/>CCP Type Plasma Source는 Dual Frequency를 사용합니다. Frequency를 외부에서 인가해주면 RF Power의 주기를 낮추는 방향으로 갑니다. 그 이유는 기본적으로 이온이 무거운 질량일 때, RF Frequency에 반응하는 속도가 낮기 때문입니다. 그러다보니 RF 주기가 크면 이온이 주기에 따라 운동하지 못하게 되면서 평균에너지를 가지는 반면에 RF 주기를 낮추면 충분한 이온 반응시간이 주어지기 때문에 높은 이온에너지를 확보할 수 있는 장점이 있습니다.  그래서 Etch 공정에서 Plasma 기술은 Low Frequency Power로 공정이 개발되고 있는 추세입니다. </blockquote></div>"
+}
