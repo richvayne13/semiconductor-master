@@ -742,7 +742,7 @@
     </div>
 
     <div class="header-actions">
-      <a href="archive_159.html" class="btn" style="text-decoration:none;">📑 159 원천 강의</a>
+      <a href="archive_159.html" onclick="goToArchive(event)" class="btn" style="text-decoration:none;">📑 159 원천 강의</a>
       <button class="btn" id="themeBtn" onclick="toggleDarkMode()">🌙 다크모드</button>
       <button class="btn" onclick="window.print()">🖨️ 인쇄/PDF</button>
     </div>
@@ -2056,8 +2056,18 @@
       }
 
       renderTimeline();
-      selectTopic(currentTopicId);
+      selectTopic(currentTopicId, true);
       switchSubTab(currentTabId);
+
+      // 스크롤 리스너 등록
+      const encPane = document.getElementById('encyclopediaPane');
+      if (encPane) {
+        encPane.addEventListener('scroll', () => {
+          if (currentTopicId) {
+            localStorage.setItem('semicon2_scroll_' + currentTopicId, encPane.scrollTop);
+          }
+        });
+      }
 
       // 사이드바 목록 내 활성 카드 스크롤 복원
       setTimeout(() => {
@@ -2067,6 +2077,13 @@
         }
       }, 100);
     });
+
+
+    function goToArchive(e) {
+      if (e) e.preventDefault();
+      const lastPost = localStorage.getItem('archive159_last_post_id');
+      window.location.href = lastPost ? `archive_159.html#post-${lastPost}` : 'archive_159.html';
+    }
 
     function initTheme() {
       const savedTheme = localStorage.getItem('semicon2_theme');
@@ -2140,7 +2157,7 @@
       });
     }
 
-    function selectTopic(topicId) {
+    function selectTopic(topicId, restoreScroll = false) {
       currentTopicId = topicId;
       localStorage.setItem('semicon2_last_topic', topicId);
       if (history.replaceState) {
@@ -2154,6 +2171,17 @@
       if (activeCard) {
         activeCard.classList.add('active');
         activeCard.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+
+      // 메인 스크롤 복원
+      const pane = document.getElementById('encyclopediaPane');
+      if (pane) {
+        if (restoreScroll) {
+          const savedScroll = localStorage.getItem('semicon2_scroll_' + topicId);
+          pane.scrollTop = savedScroll ? parseInt(savedScroll, 10) : 0;
+        } else {
+          pane.scrollTop = 0;
+        }
       }
 
       // Hero Banner

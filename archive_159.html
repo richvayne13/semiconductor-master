@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
   <title>반도체사관학교 159개 훈련과정 - 반도체 8대공정 & 소자/기술 마스터 대시보드</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -654,7 +658,7 @@
         <span class="search-icon">🔍</span>
         <input type="text" id="globalSearchInput" placeholder="[P], [E], [D], 공정, 소자 키워드 통합 검색...">
       </div>
-      <a href="index.html" class="btn-top" style="text-decoration:none; background:#0284c7; color:#ffffff; font-weight:800; border:1px solid #0284c7;">← [반도체_2] 메인 대시보드</a>
+      <a href="index.html" onclick="goToMainDashboard(event)" class="btn-top" style="text-decoration:none; background:#0284c7; color:#ffffff; font-weight:800; border:1px solid #0284c7;">← [반도체_2] 메인 대시보드</a>
         <button class="btn-top" id="themeToggleBtn" onclick="toggleTheme()">🌓 테마 전환</button>
       <button class="btn-top" onclick="window.open('https://sshmyb.tistory.com/category/%EB%B0%98%EB%8F%84%EC%B2%B4%EC%82%AC%EA%B4%80%ED%95%99%EA%B5%90%20%ED%9B%88%EB%A0%A8%EA%B3%BC%EC%A0%95', '_blank')">🌐 원본 블로그</button>
     </div>
@@ -751,6 +755,12 @@
         .replace(/'/g, '&#039;');
     }
 
+    function goToMainDashboard(e) {
+      if (e) e.preventDefault();
+      const lastTopic = localStorage.getItem('semicon2_last_topic') || 'topic_009';
+      window.location.href = `index.html#${lastTopic}`;
+    }
+
     function init() {
       // 1. 저장된 카테고리/포스트 복원 (URL 해시 #post-xxx 우선, 없으면 localStorage)
       const hash = window.location.hash.replace('#', '');
@@ -760,63 +770,76 @@
       const savedMain = localStorage.getItem('archive159_last_main_cat');
       const savedSub = localStorage.getItem('archive159_last_sub_cat');
 
-      if (savedMain) {
-        currentMainCat = savedMain;
-      }
-      if (savedSub) {
-        currentSubCat = savedSub;
-      }
+      if (savedMain) currentMainCat = savedMain;
+      if (savedSub) currentSubCat = savedSub;
 
       let targetId = null;
       if (hashId && ALL_POSTS.some(p => String(p.id) === String(hashId))) {
-        targetId = hashId;
+        targetId = String(hashId);
       } else if (savedPost && ALL_POSTS.some(p => String(p.id) === String(savedPost))) {
-        targetId = savedPost;
+        targetId = String(savedPost);
+      } else {
+        targetId = String(ALL_POSTS[0].id);
       }
 
-      if (targetId) {
-        currentPostId = targetId;
-        const targetPost = ALL_POSTS.find(p => String(p.id) === String(targetId));
-        if (targetPost) {
-          // 해당 포스트가 필터에 걸려 안 보이는 문제 방지
-          if (currentMainCat !== '전체' && targetPost.main_category !== currentMainCat) {
-            currentMainCat = targetPost.main_category;
-          }
-          if (currentSubCat !== '전체' && targetPost.sub_category !== currentSubCat) {
-            currentSubCat = targetPost.sub_category;
-          }
-        }
+      currentPostId = targetId;
+      const targetPost = ALL_POSTS.find(p => String(p.id) === String(targetId));
+      if (targetPost) {
+        // 복원 대상 포스트가 속한 카테고리로 필터 자동 정렬
+        currentMainCat = targetPost.main_category;
+        currentSubCat = targetPost.sub_category;
       }
 
-      // 카테고리 탭 버튼 활성화 동기화
+      // 카테고리 탭 버튼 active 클래스 동기화
       document.querySelectorAll('.cat-tab-btn').forEach(btn => {
         btn.classList.toggle('active', btn.textContent.includes(currentMainCat) || (currentMainCat === '전체' && btn.textContent.includes('전체')));
       });
 
       renderSubcategories();
       renderPostList();
-      selectPost(currentPostId);
+      selectPost(currentPostId, true);
 
-      // 리스트에서 활성 포스트로 스크롤 이동
+      // 사이드바 목록에서 활성 카드로 중앙 스크롤
       setTimeout(() => {
         const activeEl = document.querySelector(`.post-item[data-id="${currentPostId}"]`);
         if (activeEl) {
-          activeEl.scrollIntoView({ block: 'nearest' });
+          activeEl.scrollIntoView({ block: 'center', behavior: 'smooth' });
         }
-      }, 150);
+      }, 100);
 
+      // 본문 스크롤 리스너: 실시간 스크롤 위치 저장
+      const scrollArea = document.querySelector('.main-scroll-view');
+      if (scrollArea) {
+        scrollArea.addEventListener('scroll', () => {
+          if (currentPostId) {
+            localStorage.setItem('archive159_scroll_' + currentPostId, scrollArea.scrollTop);
+          }
+        });
+      }
+
+      // 검색창 이벤트
       document.getElementById('globalSearchInput').addEventListener('input', (e) => {
         searchQuery = e.target.value.trim().toLowerCase();
         renderPostList();
         const filtered = getFilteredPosts();
         if (filtered.length > 0 && !filtered.find(p => String(p.id) === String(currentPostId))) {
-          selectPost(filtered[0].id);
+          selectPost(filtered[0].id, false);
+        }
+      });
+
+      // 창 닫거나 다른 페이지 이동 직전 확정 저장
+      window.addEventListener('beforeunload', () => {
+        if (currentPostId) {
+          localStorage.setItem('archive159_last_post_id', String(currentPostId));
+          const sa = document.querySelector('.main-scroll-view');
+          if (sa) localStorage.setItem('archive159_scroll_' + currentPostId, sa.scrollTop);
         }
       });
     }
 
     function toggleTheme() {
-      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.toggle('dark-mode');
+      localStorage.setItem('semicon_theme', isDark ? 'dark' : 'light');
     }
 
     function setMainCategory(cat) {
@@ -831,7 +854,7 @@
       renderPostList();
       const filtered = getFilteredPosts();
       if (filtered.length > 0) {
-        selectPost(filtered[0].id);
+        selectPost(filtered[0].id, false);
       }
     }
 
@@ -864,7 +887,7 @@
       renderPostList();
       const filtered = getFilteredPosts();
       if (filtered.length > 0) {
-        selectPost(filtered[0].id);
+        selectPost(filtered[0].id, false);
       }
     }
 
@@ -928,7 +951,7 @@
         const badgeClass = 'badge-' + (p.sub_category || '').toLowerCase();
         const fullName = p.sub_category_name || PROCESS_NAMES[p.sub_category] || p.sub_category;
         return `
-          <div class="post-item ${isActive ? 'active' : ''}" data-id="${p.id}" onclick="selectPost('${p.id}')">
+          <div class="post-item ${isActive ? 'active' : ''}" data-id="${p.id}" onclick="selectPost('${p.id}', false)">
             <div class="post-item-meta">
               <span class="post-item-subcat ${badgeClass}" title="${fullName}">${escapeHtml(p.sub_category)}</span>
               <span class="post-item-id">#${p.id}</span>
@@ -944,7 +967,7 @@
       }).join('');
     }
 
-    function selectPost(id) {
+    function selectPost(id, restoreScroll = false) {
       currentPostId = id;
       localStorage.setItem('archive159_last_post_id', String(id));
       if (history.replaceState) {
@@ -976,11 +999,7 @@
 
       // Update Interleaved Article Body
       const articleBody = document.getElementById('viewArticleBody');
-      if (post.is_protected) {
-        articleBody.innerHTML = post.content_html;
-      } else {
-        articleBody.innerHTML = post.content_html;
-      }
+      articleBody.innerHTML = post.content_html;
 
       // Re-render post item active state
       document.querySelectorAll('.post-item').forEach(el => {
@@ -991,9 +1010,16 @@
         currentActiveEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
       }
 
-      // Scroll content area to top
+      // Scroll content area: 복원 요청 시 이전 위치, 아니면 맨 위로
       const scrollArea = document.querySelector('.main-scroll-view');
-      if (scrollArea) scrollArea.scrollTop = 0;
+      if (scrollArea) {
+        if (restoreScroll) {
+          const savedScroll = localStorage.getItem('archive159_scroll_' + id);
+          scrollArea.scrollTop = savedScroll ? parseInt(savedScroll, 10) : 0;
+        } else {
+          scrollArea.scrollTop = 0;
+        }
+      }
 
       // Reset timer
       resetTimer();
