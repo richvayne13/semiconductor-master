@@ -1843,15 +1843,19 @@
         iUl.appendChild(li);
       });
 
-      // Primary Diagram
+      // Primary Diagram: 토픽별 고유 핵심 도면 1:1 완벽 매핑
+      const TOPIC_PRIMARY_MAP = {
+        'topic_001': 'svg_1',
+        'topic_002': 'svg_3',
+        'topic_003': 'svg_4',
+        'topic_004': 'svg_5',
+        'topic_005': 'svg_6',
+        'topic_006': 'svg_7',
+        'topic_007': 'svg_8'
+      };
       const pDiag = document.getElementById('summaryPrimaryDiagram');
-      if (t.id === 'topic_003') {
-        pDiag.innerHTML = SVG_MAP['svg_4'];
-      } else if (t.id === 'topic_002') {
-        pDiag.innerHTML = SVG_MAP['svg_3'];
-      } else {
-        pDiag.innerHTML = SVG_MAP['svg_1'];
-      }
+      const targetSvgKey = TOPIC_PRIMARY_MAP[t.id] || 'svg_1';
+      pDiag.innerHTML = SVG_MAP[targetSvgKey] || SVG_MAP['svg_1'];
 
       // Tab 2: Diagrams
       const dAll = document.getElementById('diagramsAllContainer');
