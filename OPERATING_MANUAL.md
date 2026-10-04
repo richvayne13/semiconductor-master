@@ -84,7 +84,7 @@
 
 ---
 
-## 4. 누적 토픽 히스토리 (현재 10개 토픽 완료)
+## 4. 누적 토픽 히스토리 (현재 11개 토픽 완료)
 1. **Topic #001**: BCAT(Buried Channel Array Transistor) 개념 및 100점 피드백
 2. **Topic #002**: BCAT 3D 공간격리(Vertical Decoupling) 및 배선 쇼트 방지 메커니즘
 3. **Topic #003**: 워드라인·비트라인·커패시터의 본질과 DRAM 동작 원리 (물통 & 바둑판 좌표계)
@@ -95,6 +95,7 @@
 8. **Topic #008**: MR-MUF (Mass Reflow Molded Underfill) 명칭 완벽 해부 (M·R·M·UF 단어 분해 및 방열 2.5배 비밀)
 9. **Topic #009**: 2D DRAM vs 3D DRAM 차이 완벽 해부 (셀 눕힘 & 40단 수직 적층, EUV 탈피, 간섭 제로, 48GB 용량 돌파)
 10. **Topic #010**: 게이트-채널 감쌈 면적과 SCE 억제 & Field Effect의 On-Current(Ion) 증가 원리 (Planar vs FinFET vs GAA)
+11. **Topic #011**: 게이트가 채널을 많이 감쌀수록 '좋은 이유(원인)'와 '구체적 4대 이득(Ion/Ioff/S.S/면적)'
 
 ### [기능 개선] 원천강의 ↔ 메인 대시보드 상호 이동 시 마지막 페이지 & 스크롤 완벽 기억
 - **메인 대시보드 (`index.html`)**: 마지막 조회 토픽(`Topic #009` 등), 서브탭 및 **본문 스크롤 위치**까지 `localStorage` 및 URL Hash(`#topic_009`)에 실시간 동기화. 상단 "159 원천 강의" 버튼 클릭 시 직전 포스트 해시(`#post-xxx`)를 달고 이동.
