@@ -752,9 +752,58 @@
     }
 
     function init() {
+      // 1. 저장된 카테고리/포스트 복원 (URL 해시 #post-xxx 우선, 없으면 localStorage)
+      const hash = window.location.hash.replace('#', '');
+      const hashMatch = hash.match(/^post-(.+)$/);
+      const hashId = hashMatch ? hashMatch[1] : (hash.startsWith('post-') ? hash.replace('post-', '') : (hash ? hash : null));
+      const savedPost = localStorage.getItem('archive159_last_post_id');
+      const savedMain = localStorage.getItem('archive159_last_main_cat');
+      const savedSub = localStorage.getItem('archive159_last_sub_cat');
+
+      if (savedMain) {
+        currentMainCat = savedMain;
+      }
+      if (savedSub) {
+        currentSubCat = savedSub;
+      }
+
+      let targetId = null;
+      if (hashId && ALL_POSTS.some(p => String(p.id) === String(hashId))) {
+        targetId = hashId;
+      } else if (savedPost && ALL_POSTS.some(p => String(p.id) === String(savedPost))) {
+        targetId = savedPost;
+      }
+
+      if (targetId) {
+        currentPostId = targetId;
+        const targetPost = ALL_POSTS.find(p => String(p.id) === String(targetId));
+        if (targetPost) {
+          // 해당 포스트가 필터에 걸려 안 보이는 문제 방지
+          if (currentMainCat !== '전체' && targetPost.main_category !== currentMainCat) {
+            currentMainCat = targetPost.main_category;
+          }
+          if (currentSubCat !== '전체' && targetPost.sub_category !== currentSubCat) {
+            currentSubCat = targetPost.sub_category;
+          }
+        }
+      }
+
+      // 카테고리 탭 버튼 활성화 동기화
+      document.querySelectorAll('.cat-tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.includes(currentMainCat) || (currentMainCat === '전체' && btn.textContent.includes('전체')));
+      });
+
       renderSubcategories();
       renderPostList();
       selectPost(currentPostId);
+
+      // 리스트에서 활성 포스트로 스크롤 이동
+      setTimeout(() => {
+        const activeEl = document.querySelector(`.post-item[data-id="${currentPostId}"]`);
+        if (activeEl) {
+          activeEl.scrollIntoView({ block: 'nearest' });
+        }
+      }, 150);
 
       document.getElementById('globalSearchInput').addEventListener('input', (e) => {
         searchQuery = e.target.value.trim().toLowerCase();
@@ -773,6 +822,8 @@
     function setMainCategory(cat) {
       currentMainCat = cat;
       currentSubCat = '전체';
+      localStorage.setItem('archive159_last_main_cat', cat);
+      localStorage.setItem('archive159_last_sub_cat', '전체');
       document.querySelectorAll('.cat-tab-btn').forEach(btn => {
         btn.classList.toggle('active', btn.textContent.includes(cat) || (cat === '전체' && btn.textContent.includes('전체')));
       });
@@ -806,6 +857,7 @@
 
     function setSubCategory(sub) {
       currentSubCat = sub;
+      localStorage.setItem('archive159_last_sub_cat', sub);
       document.querySelectorAll('.subcat-chip').forEach(chip => {
         chip.classList.toggle('active', chip.getAttribute('data-sub') === sub);
       });
@@ -894,6 +946,10 @@
 
     function selectPost(id) {
       currentPostId = id;
+      localStorage.setItem('archive159_last_post_id', String(id));
+      if (history.replaceState) {
+        history.replaceState(null, '', '#post-' + id);
+      }
       const post = ALL_POSTS.find(p => String(p.id) === String(id));
       if (!post) return;
 
@@ -930,6 +986,10 @@
       document.querySelectorAll('.post-item').forEach(el => {
         el.classList.toggle('active', el.getAttribute('data-id') === String(id));
       });
+      const currentActiveEl = document.querySelector(`.post-item[data-id="${id}"]`);
+      if (currentActiveEl) {
+        currentActiveEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
 
       // Scroll content area to top
       const scrollArea = document.querySelector('.main-scroll-view');

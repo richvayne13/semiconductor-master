@@ -2039,8 +2039,33 @@
 
     window.addEventListener('DOMContentLoaded', () => {
       initTheme();
+
+      // 마지막 토픽 복원 (URL 해시 #topic_xxx 우선, 없으면 localStorage)
+      const hash = window.location.hash.replace('#', '');
+      const savedTopic = localStorage.getItem('semicon2_last_topic');
+      if (hash && TOPICS.some(t => t.id === hash)) {
+        currentTopicId = hash;
+      } else if (savedTopic && TOPICS.some(t => t.id === savedTopic)) {
+        currentTopicId = savedTopic;
+      }
+
+      // 마지막 탭 복원
+      const savedTab = localStorage.getItem('semicon2_last_tab');
+      if (savedTab && ['tab-summary', 'tab-diagrams'].includes(savedTab)) {
+        currentTabId = savedTab;
+      }
+
       renderTimeline();
       selectTopic(currentTopicId);
+      switchSubTab(currentTabId);
+
+      // 사이드바 목록 내 활성 카드 스크롤 복원
+      setTimeout(() => {
+        const activeCard = document.querySelector('.topic-item-card.active');
+        if (activeCard) {
+          activeCard.scrollIntoView({ block: 'nearest' });
+        }
+      }, 100);
     });
 
     function initTheme() {
@@ -2072,6 +2097,7 @@
 
     function switchSubTab(tabId) {
       currentTabId = tabId;
+      localStorage.setItem('semicon2_last_tab', tabId);
       document.querySelectorAll('.sub-tab').forEach(t => {
         t.classList.toggle('active', t.dataset.tab === tabId);
       });
@@ -2116,12 +2142,19 @@
 
     function selectTopic(topicId) {
       currentTopicId = topicId;
+      localStorage.setItem('semicon2_last_topic', topicId);
+      if (history.replaceState) {
+        history.replaceState(null, '', '#' + topicId);
+      }
       const t = TOPICS.find(x => x.id === topicId);
       if (!t) return;
 
       document.querySelectorAll('.topic-item-card').forEach(c => c.classList.remove('active'));
       const activeCard = Array.from(document.querySelectorAll('.topic-item-card')).find(c => c.innerHTML.includes(t.title));
-      if (activeCard) activeCard.classList.add('active');
+      if (activeCard) {
+        activeCard.classList.add('active');
+        activeCard.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
 
       // Hero Banner
       document.getElementById('heroBadge').innerText = `Topic #${String(t.number).padStart(3, '0')}`;
