@@ -639,18 +639,90 @@
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
   </style>
-
 </head>
 <body>
-  <div style="background:#0f172a; padding:8px 16px; display:flex; align-items:center; justify-content:space-between; font-family:'Pretendard', sans-serif; font-size:12px; color:#94a3b8; border-bottom:1px solid #334155;">
-    <div>
-      <a href="index.html" style="color:#38bdf8; text-decoration:none; font-weight:700;">← [반도체_2] 심화 도감 & 백과사전 메인으로 돌아가기</a>
-    </div>
-    <div style="font-size:11px; color:#64748b;">
-      반도체사관학교 159개 훈련과정 원본 아카이브
-    </div>
-  </div>
 
+  <!-- Top Navigation Header -->
+  <header class="top-bar">
+    <div class="brand-wrap">
+      <span class="brand-badge">반도체 159 마스터</span>
+      <h1 class="brand-title">딴딴's 반도체사관학교 159 훈련과정</h1>
+    </div>
+
+    <div class="top-actions">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="globalSearchInput" placeholder="[P], [E], [D], 공정, 소자 키워드 통합 검색...">
+      </div>
+      <a href="index.html" class="btn-top" style="text-decoration:none; background:#0284c7; color:#ffffff; font-weight:800; border:1px solid #0284c7;">← [반도체_2] 메인 대시보드</a>
+        <button class="btn-top" id="themeToggleBtn" onclick="toggleTheme()">🌓 테마 전환</button>
+      <button class="btn-top" onclick="window.open('https://sshmyb.tistory.com/category/%EB%B0%98%EB%8F%84%EC%B2%B4%EC%82%AC%EA%B4%80%ED%95%99%EA%B5%90%20%ED%9B%88%EB%A0%A8%EA%B3%BC%EC%A0%95', '_blank')">🌐 원본 블로그</button>
+    </div>
+  </header>
+
+  <!-- Main Body Layout -->
+  <div class="app-body">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- 4 Main Category Tabs -->
+      <div class="category-tabs">
+        <button class="cat-tab-btn active" onclick="setMainCategory('전체')">전체 보기 (159)</button>
+        <button class="cat-tab-btn" onclick="setMainCategory('반도체 8대 공정')">반도체 8대 공정</button>
+        <button class="cat-tab-btn" onclick="setMainCategory('반도체 소자')">반도체 소자</button>
+        <button class="cat-tab-btn" onclick="setMainCategory('최신 기술 및 기업')">최신 기술 & 기업</button>
+      </div>
+
+      <!-- Subcategory Horizontal Filter -->
+      <div class="subcat-filter-bar" id="subcatFilterBar">
+        <span class="subcat-chip active" onclick="setSubCategory('전체')">전체 세부공정</span>
+      </div>
+
+      <!-- Post List -->
+      <div class="post-list-wrap" id="postListContainer">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </aside>
+
+    <!-- Main Content Reader -->
+    <main class="content-area" id="contentArea">
+      <!-- Sticky Post Header -->
+      <div class="content-header-sticky">
+        <div class="post-header-info">
+          <div class="post-header-tag" id="viewPostTag">
+            <span id="viewPostMainCat">🚀 반도체 8대 공정</span> • <span id="viewPostSubCat">[P] 포토 공정</span>
+          </div>
+          <h2 class="post-header-title" id="viewPostTitle">포스트 제목</h2>
+        </div>
+        <div class="post-header-controls">
+          <div class="timer-badge">
+            ⏱️ <span id="timerDisplay">00:30</span>
+          </div>
+          <button class="btn-timer" id="timerStartBtn" onclick="toggleTimer()">30초 답변 연습</button>
+          <button class="btn-top" id="openOriginalBtn" onclick="openOriginalUrl()">🔗 원본 글 보기</button>
+        </div>
+      </div>
+
+      <!-- Scrollable Viewer -->
+      <div class="main-scroll-view">
+        
+        <!-- Interview Q&A Section -->
+        <div class="qa-section" id="viewQaSection" style="display: none;">
+          <div class="section-label">🎙️ 실전 면접 기출 및 예상 질문</div>
+          <div id="viewQaList">
+            <!-- Questions rendered here -->
+          </div>
+        </div>
+
+        <!-- Full Verbatim Article & Interleaved Diagrams Section -->
+        <div class="section-label">📖 원문 전문 및 기술 도해 다이어그램 뷰어</div>
+        <div class="article-container">
+          <div class="article-body" id="viewArticleBody">
+            <!-- Interleaved exact flow rendered here -->
+          </div>
+        </div>
+
+      </div>
     </main>
 
   </div>
