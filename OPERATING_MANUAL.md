@@ -84,7 +84,7 @@
 
 ---
 
-## 4. 누적 토픽 히스토리 (현재 7개 토픽 완료)
+## 4. 누적 토픽 히스토리 (현재 8개 토픽 완료)
 1. **Topic #001**: BCAT(Buried Channel Array Transistor) 개념 및 100점 피드백
 2. **Topic #002**: BCAT 3D 공간격리(Vertical Decoupling) 및 배선 쇼트 방지 메커니즘
 3. **Topic #003**: 워드라인·비트라인·커패시터의 본질과 DRAM 동작 원리 (물통 & 바둑판 좌표계)
@@ -92,3 +92,4 @@
 5. **Topic #005**: DRAM 커패시터 혁신 (실린더형 vs 필러형 & 더블 서포터 및 High-k)
 6. **Topic #006**: HBM4에서 비아 홀(TSV I/O)의 개수가 2048개인 이유 (속도 한계 극복 & TSMC 파운드리 베이스 다이)
 7. **Topic #007**: HBM4 2048개 비아 홀의 16단 적층 계산법 (16층 × 2048개 = 32,768개 비아 홀 및 채널 매핑)
+8. **Topic #008**: MR-MUF (Mass Reflow Molded Underfill) 명칭 완벽 해부 (M·R·M·UF 단어 분해 및 방열 2.5배 비밀)
