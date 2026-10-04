@@ -117,3 +117,17 @@
   - [좌측] 소자 단면 비교: 깊은 접합(DIBL 전계 침투/바닥 누설) vs Shallow Extension(전계 침투 차단/게이트 통제권 완벽 보존)
   - [우측] 깊이별 SIMS 도핑 농도 프로파일 곡선: 이상적 Box-like vs 첨단 USJ(레이저 열처리) vs 구형 RTA(TED 확산 꼬리) 1:1 비교
 - **배포 동기화**: `build_encyclopedia.py` -> `prepare_deploy_files.py` -> `index.html` & `semiconductor2.html`
+
+### [2026-10-04] Topic #016: SOI (Silicon On Insulator) 기술의 본질 (BOX 산화막 격리, PD vs FD-SOI & RF/초저전력 특화)
+- **추가 토픽**: `topic_016` (총 16개 토픽 누적)
+- **카테고리**: 소자 구조 & 첨단 기판 (Device Architecture & Substrate)
+- **내용**: 
+  - 벌크 실리콘(Bulk-Si) vs SOI 구조적 본질 비교: 기판과 소자 사이에 얇은 절연 매립 산화막(BOX: Buried Oxide, SiO₂) 삽입
+  - 벌크 대비 4대 혁신: 기생 접합 커패시턴스(Cj) 70% 격감(속도 30% 향상), 래치업(Latch-up) 0%, 바닥 누설전류(DIBL) 원천 차단, 방사선 소프트 에러 방지
+  - PD-SOI(부분 공핍형: Floating Body 및 Kink 현상) vs FD-SOI(완전 공핍형: Tsi < 6nm 초박막으로 플로팅 바디 완벽 제거 및 무도핑 채널) 비교
+  - FD-SOI 전매특허: 백 바이어스(Back Biasing)를 통한 동적 문턱전압(Vth) 소프트웨어 튜닝 (FBB 고성능 vs RBB 초저전력 슬립 모드)
+  - 시장 생태계: 3nm 최첨단 CPU에서 FinFET/GAA로 간 이유(웨이퍼 원가, 자기 가열 효과)와 5G 스마트폰 무선 통신 스위치(RF-SOI 100% 독점) 및 차량용/IoT(FD-SOI)에서의 독보적 강점
+- **신규 SVG 도해**: `generate_svg_diagram_17()` 추가
+  - [좌측] 기판 구조 비교: 벌크 실리콘(기생용량 Cj/바닥 누설/래치업 노출) vs SOI 웨이퍼(BOX 절연막 삽입/Cj 70% 격감/래치업 0%)
+  - [우측] PD-SOI vs FD-SOI 완전 공핍화 구조 및 백 바이어스(FBB/RBB) 동적 제어 메커니즘
+- **배포 동기화**: `build_encyclopedia.py` -> `prepare_deploy_files.py` -> `index.html` & `semiconductor2.html`
