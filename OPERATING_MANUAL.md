@@ -104,3 +104,16 @@
 - **메인 대시보드 (`index.html`)**: 마지막 조회 토픽(`Topic #009` 등), 서브탭 및 **본문 스크롤 위치**까지 `localStorage` 및 URL Hash(`#topic_009`)에 실시간 동기화. 상단 "159 원천 강의" 버튼 클릭 시 직전 포스트 해시(`#post-xxx`)를 달고 이동.
 - **원천 강의 (`archive_159.html`)**: 마지막 조회 훈련과정 번호(`#post-351` 등), 대/소분류 카테고리 필터, **본문 스크롤 위치(ScrollTop)**를 실시간 자동 보존 및 복원. 상단 "메인 대시보드" 버튼 클릭 시 직전 토픽 해시(`#topic_xxx`)를 달고 이동.
 - **캐시 방지 헤더(Cache-Control)** 완벽 주입으로 항상 최신 스크립트 실행 보장.
+
+### [2026-10-04] Topic #015: Shallow Junction Depth Profile (접합 깊이 Xj, SIMS 농도 프로파일 & USJ 공정 물리)
+- **추가 토픽**: `topic_015` (총 15개 토픽 누적)
+- **카테고리**: 소자 물리 & 초미세 접합 (Device Physics & Junction)
+- **내용**: 
+  - Junction Depth (Xj)의 물리적 정의 (N(x) = Nsub 교차점)
+  - 게이트 길이(Lg) 축소 시 Xj 스케일링이 필수적인 이유: 드레인 전계의 채널 하부 침투(DIBL) 및 펀치스루 원천 차단
+  - 이상적인 직사각형(Box-like) 프로파일(표면 Rc 극소화 + 초가파른 접합 경사 Abruptness)과 현실의 TED(열확산) 꼬리 딜레마
+  - 첨단 USJ(Ultra-Shallow Junction) 3대 공정 솔루션: PAI(비정질화) + Sub-keV 초저에너지 주입 + 밀리초 레이저 열처리(LSA/FLA)
+- **신규 SVG 도해**: `generate_svg_diagram_16()` 추가
+  - [좌측] 소자 단면 비교: 깊은 접합(DIBL 전계 침투/바닥 누설) vs Shallow Extension(전계 침투 차단/게이트 통제권 완벽 보존)
+  - [우측] 깊이별 SIMS 도핑 농도 프로파일 곡선: 이상적 Box-like vs 첨단 USJ(레이저 열처리) vs 구형 RTA(TED 확산 꼬리) 1:1 비교
+- **배포 동기화**: `build_encyclopedia.py` -> `prepare_deploy_files.py` -> `index.html` & `semiconductor2.html`
