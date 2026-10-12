@@ -1,4 +1,4 @@
-import json, sys, os, html, shutil
+import json, sys, os, html, shutil, re
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -1018,23 +1018,31 @@ html_template = """<!DOCTYPE html>
 </html>
 """
 
-# Save to result/260929_v2.0/index.html
-out_html_v2 = result_v2 / "index.html"
-with open(out_html_v2, 'w', encoding='utf-8') as f:
-    f.write(html_template)
-print(f"Generated v2.0 dashboard HTML: {out_html_v2} (Size: {out_html_v2.stat().st_size} bytes)")
+# Save to archive_159.html across workspace and result
+out_html_v2 = result_v2 / "archive_159.html"
+out_html_root = result_root / "archive_159.html"
+out_html_ws = workspace_root / "archive_159.html"
 
-# Save to result/index.html
-out_html_root = result_root / "index.html"
-with open(out_html_root, 'w', encoding='utf-8') as f:
-    f.write(html_template)
-print(f"Generated root distribution HTML: {out_html_root} (Size: {out_html_root.stat().st_size} bytes)")
-
-# Save to C:\Work\반도체\index.html (for GitHub Pages root)
-out_html_ws = workspace_root / "index.html"
-with open(out_html_ws, 'w', encoding='utf-8') as f:
-    f.write(html_template)
-print(f"Generated workspace root HTML (GitHub Pages): {out_html_ws} (Size: {out_html_ws.stat().st_size} bytes)")
+if out_html_ws.exists():
+    with open(out_html_ws, 'r', encoding='utf-8') as f:
+        existing_arc = f.read()
+    m = re.search(r'(const ALL_POSTS\s*=\s*)(\[.*?\])(;)', existing_arc, flags=re.DOTALL)
+    if m:
+        updated_arc = existing_arc[:m.start(2)] + json_str + existing_arc[m.end(2):]
+        with open(out_html_ws, 'w', encoding='utf-8') as f:
+            f.write(updated_arc)
+        with open(out_html_v2, 'w', encoding='utf-8') as f:
+            f.write(updated_arc)
+        with open(out_html_root, 'w', encoding='utf-8') as f:
+            f.write(updated_arc)
+        print(f"Updated archive_159.html across workspace and result: {out_html_ws}")
+    else:
+        with open(out_html_ws, 'w', encoding='utf-8') as f:
+            f.write(html_template)
+else:
+    with open(out_html_ws, 'w', encoding='utf-8') as f:
+        f.write(html_template)
+print(f"Generated workspace archive HTML (GitHub Pages): {out_html_ws}")
 
 # Pair with run.bat in tool/260929_v2.0/
 run_bat_path = Path(r"C:\Work\반도체\tool\260929_v2.0\run.bat")
@@ -1059,9 +1067,9 @@ python "%TOOL_DIR%build_dashboard.py"
 echo.
 echo ======================================================================
 echo  빌드 완료! 브라우저에서 아래 대시보드를 실행합니다:
-echo  %BASE_DIR%result\\index.html
+echo  %BASE_DIR%archive_159.html
 echo ======================================================================
-start "" "%BASE_DIR%result\\index.html"
+start "" "%BASE_DIR%archive_159.html"
 pause
 """
 

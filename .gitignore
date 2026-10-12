@@ -3,3 +3,4 @@ tool/scratch/
 *.log
 *.tmp
 __pycache__/
+원클릭_자동구축_스크립트.bat

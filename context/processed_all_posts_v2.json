@@ -5548,9 +5548,9 @@
     "id": "158",
     "url": "https://sshmyb.tistory.com/158",
     "title": "[DRAM #1] \"Dynamic Random Access Memory, D램에 대해서 설명하세요\"",
-    "main_category": "반도체 8대 공정",
-    "sub_category": "M",
-    "sub_category_name": "금속배선 & 패키징 (Metal & Packaging)",
+    "main_category": "반도체 소자",
+    "sub_category": "DRAM",
+    "sub_category_name": "DRAM 메모리",
     "is_protected": false,
     "images": [
       {
@@ -5833,8 +5833,8 @@
     "url": "https://sshmyb.tistory.com/146",
     "title": "[증착공정] 훈련 : 15 \"RF Plasma, 자기바이어스효과에 대해서 설명하세요\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "E",
-    "sub_category_name": "식각 공정 (Etch)",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -5866,8 +5866,8 @@
     "url": "https://sshmyb.tistory.com/145",
     "title": "[증착공정] 훈련 : 14 \"DC Plasma는 부도체 전극에서 플라즈마를 유지할 수 없는 건지, 플라즈마의 collective motion에 대해서 설명하세요.\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "E",
-    "sub_category_name": "식각 공정 (Etch)",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -5964,8 +5964,8 @@
     "url": "https://sshmyb.tistory.com/134",
     "title": "[증착공정] 훈련 12 : \"플라즈마와 파센 법칙, Paschen's Law\"",
     "main_category": "반도체 8대 공정",
-    "sub_category": "E",
-    "sub_category_name": "식각 공정 (Etch)",
+    "sub_category": "D",
+    "sub_category_name": "박막 & 증착 공정 (Deposition)",
     "is_protected": false,
     "images": [
       {
@@ -7385,9 +7385,9 @@
     "id": "54",
     "url": "https://sshmyb.tistory.com/54",
     "title": "[반도체 소자] : [Short Channel Effect #4] \"GIDL / Hot carrier injection에 대해서 설명하세요\"",
-    "main_category": "반도체 8대 공정",
-    "sub_category": "E",
-    "sub_category_name": "식각 공정 (Etch)",
+    "main_category": "반도체 소자",
+    "sub_category": "SCE",
+    "sub_category_name": "단채널 효과 & 신뢰성",
     "is_protected": false,
     "images": [
       {

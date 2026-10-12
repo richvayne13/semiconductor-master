@@ -19,7 +19,7 @@ python "%TOOL_DIR%build_dashboard.py"
 echo.
 echo ======================================================================
 echo  빌드 완료! 브라우저에서 아래 대시보드를 실행합니다:
-echo  %BASE_DIR%result\index.html
+echo  %BASE_DIR%archive_159.html
 echo ======================================================================
-start "" "%BASE_DIR%result\index.html"
+start "" "%BASE_DIR%archive_159.html"
 pause
