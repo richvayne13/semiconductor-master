@@ -685,6 +685,7 @@ html_template = """<!DOCTYPE html>
         <span class="search-icon">🔍</span>
         <input type="text" id="globalSearchInput" placeholder="[P], [E], [D], 공정, 소자 키워드 통합 검색...">
       </div>
+      <a href="https://richvayne13.github.io/semiconductor-3/" onclick="goToSemicon3(event)" class="btn-top" style="text-decoration:none; background:#0284c7; color:#ffffff; font-weight:800; border:1px solid #0284c7;">← [반도체_3] Q&A 백과사전</a>
       <button class="btn-top" id="themeToggleBtn" onclick="toggleTheme()">🌓 테마 전환</button>
       <button class="btn-top" onclick="window.open('https://sshmyb.tistory.com/category/%EB%B0%98%EB%8F%84%EC%B2%B4%EC%82%AC%EA%B4%80%ED%95%99%EA%B5%90%20%ED%9B%88%EB%A0%A8%EA%B3%BC%EC%A0%95', '_blank')">🌐 원본 블로그</button>
     </div>
@@ -779,6 +780,18 @@ html_template = """<!DOCTYPE html>
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#039;');
+    }
+
+    function goToSemicon3(e) {
+      if (e) e.preventDefault();
+      const isLocal = window.location.protocol === 'file:';
+      const lastQ = localStorage.getItem('semicon3_last_q');
+      const hash = lastQ ? `#${lastQ}` : '';
+      if (isLocal) {
+        window.location.href = `../반도체3/index.html${hash}`;
+      } else {
+        window.location.href = `https://richvayne13.github.io/semiconductor-3/${hash}`;
+      }
     }
 
     function init() {
